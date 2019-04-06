@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="Tnq-QS-mQw">
             <objects>
-                <viewController storyboardIdentifier="Login" id="8ad-ci-9vm" customClass="LoginViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="8ad-ci-9vm" customClass="LoginViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MFh-mq-l7v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

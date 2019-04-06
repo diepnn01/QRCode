@@ -12,7 +12,7 @@
         <!--Tabbar View Controller-->
         <scene sceneID="BXr-Vj-2bo">
             <objects>
-                <tabBarController id="KDX-1U-zzl" customClass="TabbarViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarViewController" id="KDX-1U-zzl" customClass="TabbarViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p5V-kz-RU5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

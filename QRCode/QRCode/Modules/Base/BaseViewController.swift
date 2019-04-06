@@ -12,5 +12,14 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupGradient()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    private func setupGradient() {
+        view.setGradient(startColor: gradientStartColor, endColor: gradientEndColor)
     }
 }

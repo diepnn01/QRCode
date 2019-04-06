@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		31BA19C9A82E90817CDA2791 /* Pods_QRCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3827AC4FB84BA395D3AD69D /* Pods_QRCodeUITests.framework */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
-		5FB143F22256186100218AAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F12256186100218AAE /* ViewController.swift */; };
-		5FB143F52256186100218AAE /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB143F32256186100218AAE /* Initial.storyboard */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
 		5FB143FA2256186200218AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB143F92256186200218AAE /* Assets.xcassets */; };
 		5FB143FD2256186200218AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB143FB2256186200218AAE /* LaunchScreen.storyboard */; };
@@ -31,6 +29,14 @@
 		5FE08D9A22590510003B5414 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE08D9922590510003B5414 /* Scan.storyboard */; };
 		5FE08D9C2259054E003B5414 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE08D9B2259054E003B5414 /* Wallet.storyboard */; };
 		5FE08D9F2259060D003B5414 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FE08D9E2259060C003B5414 /* Configuration.plist */; };
+		5FE08DA422590872003B5414 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DA322590872003B5414 /* UIView+Extension.swift */; };
+		5FE08DA7225908D2003B5414 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DA6225908D2003B5414 /* AppConstants.swift */; };
+		5FE08DA922590917003B5414 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DA822590917003B5414 /* UIColor+Extension.swift */; };
+		5FE08DAC22590B6C003B5414 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DAB22590B6C003B5414 /* RootRouter.swift */; };
+		5FE08DAE22590BC1003B5414 /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DAD22590BC1003B5414 /* DeepLinkHandler.swift */; };
+		5FE08DB022590C30003B5414 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DAF22590C30003B5414 /* SessionManager.swift */; };
+		5FE08DB222590E13003B5414 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DB122590E13003B5414 /* UIStoryboard+Extension.swift */; };
+		5FE08DB422590ED8003B5414 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DB322590ED8003B5414 /* NSObject.swift */; };
 		BA33D453EDF3FA97413959DB /* Pods_QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359CC9B4B54295B4CF0C9A9F /* Pods_QRCode.framework */; };
 		E9B4D1D775FEA68D270D6D08 /* Pods_QRCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9799DCAF171450C2D84647 /* Pods_QRCodeTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,8 +63,6 @@
 		359CC9B4B54295B4CF0C9A9F /* Pods_QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FB143F12256186100218AAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5FB143F42256186100218AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
 		5FB143F72256186100218AAE /* QRCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QRCode.xcdatamodel; sourceTree = "<group>"; };
 		5FB143F92256186200218AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB143FC2256186200218AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 		5FE08D9922590510003B5414 /* Scan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
 		5FE08D9B2259054E003B5414 /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		5FE08D9E2259060C003B5414 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		5FE08DA322590872003B5414 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5FE08DA6225908D2003B5414 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		5FE08DA822590917003B5414 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5FE08DAB22590B6C003B5414 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		5FE08DAD22590BC1003B5414 /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		5FE08DAF22590C30003B5414 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		5FE08DB122590E13003B5414 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		5FE08DB322590ED8003B5414 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		791DD3286A76F0A371A688B2 /* Pods-QRCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeTests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeTests/Pods-QRCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		845F9EFE2BDF2ED115B4A43D /* Pods-QRCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C0987E81357272C0EDD28CF /* Pods-QRCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.release.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,9 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				5FE08D6F2258FF4F003B5414 /* Main */,
-				5FE08D7322590053003B5414 /* Helpers */,
+				5FE08DA02259066A003B5414 /* Services */,
 				5FE08D7222590049003B5414 /* Models */,
 				5FE08D7122590030003B5414 /* Modules */,
+				5FE08D7322590053003B5414 /* Helpers */,
 				5FE08D7022590020003B5414 /* Resources */,
 				5FE08D77225900DB003B5414 /* Supporting Files */,
 			);
@@ -191,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB143EF2256186100218AAE /* AppDelegate.swift */,
+				5FE08DAF22590C30003B5414 /* SessionManager.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -230,6 +244,9 @@
 		5FE08D7322590053003B5414 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5FE08DA5225908C4003B5414 /* Constants */,
+				5FE08DA22259081C003B5414 /* Utilities */,
+				5FE08DA122590809003B5414 /* Extensions */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -269,8 +286,6 @@
 		5FE08D78225901EE003B5414 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				5FB143F12256186100218AAE /* ViewController.swift */,
-				5FB143F32256186100218AAE /* Initial.storyboard */,
 				5FB143FB2256186200218AAE /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
@@ -337,6 +352,41 @@
 				5FE08D822259027E003B5414 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		5FE08DA02259066A003B5414 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5FE08DA122590809003B5414 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FE08DA322590872003B5414 /* UIView+Extension.swift */,
+				5FE08DA822590917003B5414 /* UIColor+Extension.swift */,
+				5FE08DB122590E13003B5414 /* UIStoryboard+Extension.swift */,
+				5FE08DB322590ED8003B5414 /* NSObject.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5FE08DA22259081C003B5414 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5FE08DAB22590B6C003B5414 /* RootRouter.swift */,
+				5FE08DAD22590BC1003B5414 /* DeepLinkHandler.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5FE08DA5225908C4003B5414 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5FE08DA6225908D2003B5414 /* AppConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		6FF9CBFE97CE909713E997BF /* Frameworks */ = {
@@ -462,7 +512,6 @@
 				5FB143FD2256186200218AAE /* LaunchScreen.storyboard in Resources */,
 				5FE08D9A22590510003B5414 /* Scan.storyboard in Resources */,
 				5FB143FA2256186200218AAE /* Assets.xcassets in Resources */,
-				5FB143F52256186100218AAE /* Initial.storyboard in Resources */,
 				5FE08D9822590506003B5414 /* Profile.storyboard in Resources */,
 				5FE08D922259044D003B5414 /* SignUp.storyboard in Resources */,
 				5FE08D9C2259054E003B5414 /* Wallet.storyboard in Resources */,
@@ -562,13 +611,20 @@
 				5FE08D85225902A3003B5414 /* SignUpViewController.swift in Sources */,
 				5FE08D832259027E003B5414 /* BaseViewController.swift in Sources */,
 				5FE08D882259038B003B5414 /* TabbarViewController.swift in Sources */,
+				5FE08DB422590ED8003B5414 /* NSObject.swift in Sources */,
+				5FE08DAE22590BC1003B5414 /* DeepLinkHandler.swift in Sources */,
 				5FE08D96225904D8003B5414 /* TabbarItem.swift in Sources */,
+				5FE08DAC22590B6C003B5414 /* RootRouter.swift in Sources */,
+				5FE08DA7225908D2003B5414 /* AppConstants.swift in Sources */,
 				5FE08D802259026B003B5414 /* LoginViewController.swift in Sources */,
-				5FB143F22256186100218AAE /* ViewController.swift in Sources */,
+				5FE08DA922590917003B5414 /* UIColor+Extension.swift in Sources */,
+				5FE08DB222590E13003B5414 /* UIStoryboard+Extension.swift in Sources */,
+				5FE08DA422590872003B5414 /* UIView+Extension.swift in Sources */,
 				5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */,
 				5FE08D8A225903A6003B5414 /* ProfileViewController.swift in Sources */,
 				5FB143F02256186100218AAE /* AppDelegate.swift in Sources */,
 				5FE08D8C225903B5003B5414 /* ScanViewController.swift in Sources */,
+				5FE08DB022590C30003B5414 /* SessionManager.swift in Sources */,
 				5FE08D8E225903C7003B5414 /* WalletViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,14 +661,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5FB143F32256186100218AAE /* Initial.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FB143F42256186100218AAE /* Base */,
-			);
-			name = Initial.storyboard;
-			sourceTree = "<group>";
-		};
 		5FB143FB2256186200218AAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
