@@ -15,6 +15,9 @@ final class TabbarViewController: UITabBarController {
         
         tabBar.tintColor = activeColor
         
+        tabBar.backgroundImage = UIImage()
+        tabBar.backgroundColor = .white
+        
         var arrayVC = [UIViewController]()
         arrayVC.append(getViewControllerForTabbarItem(type: .Wallet))
         arrayVC.append(getViewControllerForTabbarItem(type: .Scan))
@@ -22,6 +25,15 @@ final class TabbarViewController: UITabBarController {
         
         viewControllers = arrayVC
     }
+    
+//    override func viewWillLayoutSubviews() {
+//        super.viewWillLayoutSubviews()
+//        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: view.frame.width, height: tabBar.frame.height), cornerRadius: 15)
+//        let mask = CAShapeLayer()
+//        mask.path = path.cgPath
+//        tabBar.layer.mask = mask
+//        
+//    }
     
     private func getViewControllerForTabbarItem(type: TabbarItems) -> UIViewController {
         let itemController = TabbarItem(itemType: type)
