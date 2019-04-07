@@ -10,5 +10,6 @@ import UIKit
 
 let gradientStartColor = UIColor.colorFromHex("1e154b")
 let gradientEndColor = UIColor.colorFromHex("4a2859")
+let activeColor = UIColor.colorFromHex("fcb513")
 
 

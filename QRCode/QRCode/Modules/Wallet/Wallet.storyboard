@@ -13,7 +13,7 @@
         <!--Wallet View Controller-->
         <scene sceneID="cpC-l6-Xg9">
             <objects>
-                <viewController storyboardIdentifier="Wallet" id="dZO-UT-GrE" customClass="WalletViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalletViewController" id="dZO-UT-GrE" customClass="WalletViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EiN-tH-YUu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -24,4 +24,13 @@ extension UIView {
         self.layer.insertSublayer(gradientLayer, at: 0)
         return gradientLayer
     }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
+    }
 }

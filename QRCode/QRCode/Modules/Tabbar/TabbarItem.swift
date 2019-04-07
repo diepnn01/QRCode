@@ -8,14 +8,41 @@
 
 import UIKit
 
-final class TabbarItem {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+enum TabbarItems: String {
+    case Wallet = "Wallet"
+    case Scan = "Scan"
+    case Profile = "Profile"
+    
+    var itemTitle: String {
+        switch self {
+        case .Wallet:
+            return "Wallet"
+        case .Scan:
+            return "Scan"
+        case .Profile:
+            return "Profile"
+        }
     }
-    */
+}
 
+struct TabbarItem {
+    
+    let controller: UIViewController
+    let image: String
+
+    init(itemType: TabbarItems) {
+        
+        switch itemType {
+        case .Wallet:
+            controller = UIStoryboard.loadViewControler(itemType.rawValue, nameController: WalletViewController.className) ?? UIViewController()
+            image = "icon_wallet_disable"
+        case .Scan:
+            controller = UIStoryboard.loadViewControler(itemType.rawValue, nameController: ScanViewController.className) ?? UIViewController()
+            image = "icon_scan_disabled"
+        case .Profile:
+            controller = UIStoryboard.loadViewControler(itemType.rawValue, nameController: ProfileViewController.className) ?? UIViewController()
+            image = "icon_profile_disabled"
+        }
+        
+    }
 }

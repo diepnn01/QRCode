@@ -12,19 +12,25 @@ final class TabbarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        tabBar.tintColor = activeColor
+        
+        var arrayVC = [UIViewController]()
+        arrayVC.append(getViewControllerForTabbarItem(type: .Wallet))
+        arrayVC.append(getViewControllerForTabbarItem(type: .Scan))
+        arrayVC.append(getViewControllerForTabbarItem(type: .Profile))
+        
+        viewControllers = arrayVC
     }
     
+    private func getViewControllerForTabbarItem(type: TabbarItems) -> UIViewController {
+        let itemController = TabbarItem(itemType: type)
+        itemController.controller.tabBarItem.title = type.itemTitle
+        itemController.controller.tabBarItem.image = UIImage(named: itemController.image)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let naviViewController = UINavigationController(rootViewController: itemController.controller)
+        naviViewController.isNavigationBarHidden = true
+        
+        return naviViewController
     }
-    */
-
 }
