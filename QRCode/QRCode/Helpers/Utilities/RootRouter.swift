@@ -10,30 +10,38 @@ import UIKit
 
 class RootRouter {
     
+    enum MainRouteStoryboard {
+        static let Login = "Login"
+        static let Tabbar = "Tabbar"
+    }
+    
     /** Replaces root view controller. You can specify the replacment animation type.
      If no animation type is specified, there is no animation */
     func setRootViewController(controller: UIViewController, animatedWithOptions: UIView.AnimationOptions?) {
         guard let window = UIApplication.shared.keyWindow else {
             fatalError("No window in app")
         }
+        
+        let rootViewController = UINavigationController(rootViewController: controller)
+        rootViewController.isNavigationBarHidden = true
         if let animationOptions = animatedWithOptions, window.rootViewController != nil {
-            window.rootViewController = controller
+            window.rootViewController = rootViewController
             UIView.transition(with: window, duration: 0.33, options: animationOptions, animations: {
             }, completion: nil)
         } else {
-            window.rootViewController = controller
+            window.rootViewController = rootViewController
         }
     }
     
     func loadMainAppStructure() {
         
         if !SessionManager.shared.isLogin {
-            guard let loginController = UIStoryboard.loadViewControler("Login", nameController: LoginViewController.className) as? LoginViewController else {
+            guard let loginController = UIStoryboard.loadViewControler(MainRouteStoryboard.Login, nameController: LoginViewController.className) as? LoginViewController else {
                 return
             }
             setRootViewController(controller: loginController, animatedWithOptions: nil)
         } else {
-            guard let tabbarController = UIStoryboard.loadViewControler("Tabbar", nameController: TabbarViewController.className) as? TabbarViewController else {
+            guard let tabbarController = UIStoryboard.loadViewControler(MainRouteStoryboard.Tabbar, nameController: TabbarViewController.className) as? TabbarViewController else {
                 return
             }
             

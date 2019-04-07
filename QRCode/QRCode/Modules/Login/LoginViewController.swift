@@ -10,6 +10,11 @@ import UIKit
 
 final class LoginViewController: BaseViewController {
 
+    enum SegueIndenfier {
+        static let tabbar = "show tabbar"
+        static let signUp = "show sign up"
+    }
+    
     //MARK:- Outlets
     @IBOutlet weak var emailInputText: CustomInputTextView!
     @IBOutlet weak var passwordInputText: CustomInputTextView!
@@ -22,7 +27,7 @@ final class LoginViewController: BaseViewController {
     
     //MARK:- Actions
     @IBAction private func actionLogin(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: SegueIndenfier.tabbar, sender: nil)
     }
     
     @IBAction private func actionSignup(_ sender: UIButton) {

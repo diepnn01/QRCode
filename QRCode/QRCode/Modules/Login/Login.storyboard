@@ -153,7 +153,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="actionSignup:" destination="8ad-ci-9vm" eventType="touchUpInside" id="id1-ar-u01"/>
-                                                    <segue destination="edb-ps-bVf" kind="show" id="HfZ-Q3-ZKj"/>
+                                                    <segue destination="edb-ps-bVf" kind="show" identifier="show sign up" id="HfZ-Q3-ZKj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -175,6 +175,7 @@
                                             <constraint firstItem="IG6-vL-5wP" firstAttribute="top" secondItem="23M-2I-Uuh" secondAttribute="bottom" constant="25" id="bcF-Eh-eh3"/>
                                             <constraint firstItem="mOm-M0-KUa" firstAttribute="leading" secondItem="zDs-xh-Fiq" secondAttribute="leading" constant="36" id="dNU-Bh-ERN"/>
                                             <constraint firstItem="JDF-qH-qf0" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="dmP-XZ-uhS"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uJJ-LX-Ru5" secondAttribute="bottom" constant="50" id="dsq-Sk-kXk"/>
                                             <constraint firstItem="23M-2I-Uuh" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="eso-zg-hdv"/>
                                             <constraint firstItem="23M-2I-Uuh" firstAttribute="top" secondItem="YFP-W1-kZ0" secondAttribute="bottom" constant="25" id="j5N-cc-4oc"/>
                                             <constraint firstAttribute="trailing" secondItem="mOm-M0-KUa" secondAttribute="trailing" constant="36" id="pH0-U2-oS6"/>
@@ -185,12 +186,12 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="zDs-xh-Fiq" firstAttribute="centerX" secondItem="IRF-Cr-gI9" secondAttribute="centerX" id="8TY-V2-oSg"/>
+                                    <constraint firstItem="zDs-xh-Fiq" firstAttribute="width" secondItem="IRF-Cr-gI9" secondAttribute="width" id="2X5-ZN-Y6L"/>
                                     <constraint firstAttribute="trailing" secondItem="zDs-xh-Fiq" secondAttribute="trailing" id="OQu-TY-kch"/>
                                     <constraint firstAttribute="bottom" secondItem="zDs-xh-Fiq" secondAttribute="bottom" id="TtR-HN-M96"/>
+                                    <constraint firstItem="zDs-xh-Fiq" firstAttribute="height" secondItem="IRF-Cr-gI9" secondAttribute="height" id="Zfo-9a-RZ3"/>
                                     <constraint firstItem="zDs-xh-Fiq" firstAttribute="leading" secondItem="IRF-Cr-gI9" secondAttribute="leading" id="eSn-TY-EFu"/>
                                     <constraint firstItem="zDs-xh-Fiq" firstAttribute="top" secondItem="IRF-Cr-gI9" secondAttribute="top" id="hbs-3a-hZG"/>
-                                    <constraint firstItem="zDs-xh-Fiq" firstAttribute="centerY" secondItem="IRF-Cr-gI9" secondAttribute="centerY" id="n3i-KP-Lhw"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -206,6 +207,7 @@
                     <connections>
                         <outlet property="emailInputText" destination="60F-Zr-SDD" id="Ylg-tU-MHK"/>
                         <outlet property="passwordInputText" destination="pET-bg-DiY" id="ejK-PQ-dfY"/>
+                        <segue destination="rgN-O8-XVL" kind="show" identifier="show tabbar" id="7Ph-a7-4Z5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLU-W4-lH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,7 +220,15 @@
                 <viewControllerPlaceholder storyboardName="SignUp" id="edb-ps-bVf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf6-Pu-wr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532" y="100"/>
+            <point key="canvasLocation" x="541" y="-39"/>
+        </scene>
+        <!--Tabbar-->
+        <scene sceneID="2wM-Vi-5Sh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tabbar" id="rgN-O8-XVL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zY-a9-GR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="120"/>
         </scene>
     </scenes>
     <resources>
