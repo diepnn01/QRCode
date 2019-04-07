@@ -24,6 +24,9 @@ final class SignUpViewController: BaseViewController {
     //MARK:- Public methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
     }
     
     //MARK:- Actions

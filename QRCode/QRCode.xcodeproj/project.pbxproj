@@ -41,6 +41,7 @@
 		5FE08DBA225A3583003B5414 /* BaseCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DB9225A3583003B5414 /* BaseCustomView.swift */; };
 		5FE08DC0225A3C51003B5414 /* CustomInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DBF225A3C51003B5414 /* CustomInputTextView.swift */; };
 		5FE08DC2225A3C69003B5414 /* CustomInputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE08DC1225A3C69003B5414 /* CustomInputTextView.xib */; };
+		5FE08DC5225A52F2003B5414 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DC4225A52F2003B5414 /* SignUpViewModel.swift */; };
 		BA33D453EDF3FA97413959DB /* Pods_QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359CC9B4B54295B4CF0C9A9F /* Pods_QRCode.framework */; };
 		E9B4D1D775FEA68D270D6D08 /* Pods_QRCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9799DCAF171450C2D84647 /* Pods_QRCodeTests.framework */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,7 @@
 		5FE08DB9225A3583003B5414 /* BaseCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomView.swift; sourceTree = "<group>"; };
 		5FE08DBF225A3C51003B5414 /* CustomInputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputTextView.swift; sourceTree = "<group>"; };
 		5FE08DC1225A3C69003B5414 /* CustomInputTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputTextView.xib; sourceTree = "<group>"; };
+		5FE08DC4225A52F2003B5414 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		791DD3286A76F0A371A688B2 /* Pods-QRCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeTests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeTests/Pods-QRCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		845F9EFE2BDF2ED115B4A43D /* Pods-QRCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C0987E81357272C0EDD28CF /* Pods-QRCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.release.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 		5FE08D7A22590206003B5414 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				5FE08DC3225A52E0003B5414 /* ViewModel */,
 				5FE08D84225902A3003B5414 /* SignUpViewController.swift */,
 				5FE08D912259044D003B5414 /* SignUp.storyboard */,
 			);
@@ -423,6 +426,14 @@
 				5FE08DC1225A3C69003B5414 /* CustomInputTextView.xib */,
 			);
 			path = InputTextView;
+			sourceTree = "<group>";
+		};
+		5FE08DC3225A52E0003B5414 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FE08DC4225A52F2003B5414 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6FF9CBFE97CE909713E997BF /* Frameworks */ = {
@@ -688,6 +699,7 @@
 				5FE08D8C225903B5003B5414 /* ScanViewController.swift in Sources */,
 				5FE08DB022590C30003B5414 /* SessionManager.swift in Sources */,
 				5FE08DB722591102003B5414 /* LoginViewModel.swift in Sources */,
+				5FE08DC5225A52F2003B5414 /* SignUpViewModel.swift in Sources */,
 				5FE08D8E225903C7003B5414 /* WalletViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
