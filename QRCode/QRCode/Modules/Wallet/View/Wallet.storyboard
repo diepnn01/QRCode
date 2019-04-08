@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Medium.otf">
+            <string>ProximaNova-Medium</string>
+        </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Wallet View Controller-->
         <scene sceneID="cpC-l6-Xg9">
@@ -26,37 +34,31 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa0-nL-Dhg">
-                                <rect key="frame" x="147.5" y="110" width="119.5" height="14.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <rect key="frame" x="158" y="112.5" width="98" height="12.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mb-UL-Ekc">
-                                <rect key="frame" x="153" y="149.5" width="108.5" height="35"/>
+                                <rect key="frame" x="140" y="150" width="134.5" height="46.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="$">
+                                    <fragment content="$ ">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="BigCaslon-Medium"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="BigCaslon-Medium"/>
+                                            <font key="NSFont" size="24" name="ProximaNova-Medium"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="100.00">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="30" name="BigCaslon-Medium"/>
+                                            <font key="NSFont" size="38" name="ProximaNova-Medium"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zr5-l7-QeE">
-                                <rect key="frame" x="86" y="219.5" width="242" height="86"/>
+                                <rect key="frame" x="86" y="223.5" width="242" height="86"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5A4-yd-hAU">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="86"/>
@@ -70,8 +72,8 @@
                                                 <state key="normal" backgroundImage="icon_top_up"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec9-B5-PH2">
-                                                <rect key="frame" x="9" y="72" width="44.5" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="10" y="72" width="42.5" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -96,8 +98,8 @@
                                                 <state key="normal" backgroundImage="icon_vault"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vault" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sL7-A0-61D">
-                                                <rect key="frame" x="63.5" y="72" width="33" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="64.5" y="72" width="31.5" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -116,10 +118,10 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLa-lo-cen">
-                                <rect key="frame" x="0.0" y="330.5" width="414" height="531.5"/>
+                                <rect key="frame" x="0.0" y="340.5" width="414" height="521.5"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-OG-yjd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="531.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="521.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="transaction history cell" rowHeight="70" id="OXe-e7-2wC" customClass="TransactionHistoryCell" customModule="QRCode" customModuleProvider="target">
@@ -142,13 +144,13 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warcraft Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lT-Bs-I7B">
-                                                            <rect key="frame" x="61" y="12" width="109.5" height="19.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <rect key="frame" x="61" y="12" width="110.5" height="21"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                             <color key="textColor" red="0.23921568627450979" green="0.28627450980392155" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid to Steam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz1-wm-YsI">
-                                                            <rect key="frame" x="61" y="36.5" width="77.5" height="14.5"/>
+                                                            <rect key="frame" x="61" y="38" width="77.5" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
                                                             <color key="textColor" red="0.23758643865585327" green="0.28550389409065247" blue="0.33547604084014893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -210,9 +212,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nLa-lo-cen" firstAttribute="top" secondItem="zr5-l7-QeE" secondAttribute="bottom" constant="25" id="0SQ-hN-bMc"/>
+                            <constraint firstItem="nLa-lo-cen" firstAttribute="top" secondItem="zr5-l7-QeE" secondAttribute="bottom" constant="31" id="0SQ-hN-bMc"/>
                             <constraint firstItem="nLa-lo-cen" firstAttribute="leading" secondItem="bTJ-BZ-9kU" secondAttribute="leading" id="68r-jG-RKp"/>
-                            <constraint firstItem="Aa0-nL-Dhg" firstAttribute="top" secondItem="FLm-OO-6Jx" secondAttribute="bottom" constant="25" id="D7B-Sr-O6K"/>
+                            <constraint firstItem="Aa0-nL-Dhg" firstAttribute="top" secondItem="FLm-OO-6Jx" secondAttribute="bottom" constant="27.379999999999999" id="D7B-Sr-O6K"/>
                             <constraint firstItem="zr5-l7-QeE" firstAttribute="leading" secondItem="bTJ-BZ-9kU" secondAttribute="leading" constant="86" id="Dbb-yt-Y2D"/>
                             <constraint firstItem="9Mb-UL-Ekc" firstAttribute="centerX" secondItem="bTJ-BZ-9kU" secondAttribute="centerX" id="DxE-3R-LNE"/>
                             <constraint firstItem="bTJ-BZ-9kU" firstAttribute="trailing" secondItem="zr5-l7-QeE" secondAttribute="trailing" constant="86" id="Lc0-LR-ScM"/>
@@ -222,7 +224,7 @@
                             <constraint firstItem="bTJ-BZ-9kU" firstAttribute="bottom" secondItem="nLa-lo-cen" secondAttribute="bottom" id="fT3-cc-qjd"/>
                             <constraint firstItem="9Mb-UL-Ekc" firstAttribute="top" secondItem="Aa0-nL-Dhg" secondAttribute="bottom" constant="25" id="ikZ-45-KbX"/>
                             <constraint firstItem="Aa0-nL-Dhg" firstAttribute="centerX" secondItem="bTJ-BZ-9kU" secondAttribute="centerX" id="nVB-Uf-uN0"/>
-                            <constraint firstItem="zr5-l7-QeE" firstAttribute="top" secondItem="9Mb-UL-Ekc" secondAttribute="bottom" constant="35" id="xLX-LF-WrD"/>
+                            <constraint firstItem="zr5-l7-QeE" firstAttribute="top" secondItem="9Mb-UL-Ekc" secondAttribute="bottom" constant="27" id="xLX-LF-WrD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bTJ-BZ-9kU"/>
                     </view>
@@ -238,7 +240,7 @@
     </scenes>
     <resources>
         <image name="icon_arrow_right" width="7" height="12"/>
-        <image name="icon_passport_logo" width="65.5" height="10"/>
+        <image name="icon_passport_logo" width="164" height="25"/>
         <image name="icon_top_up" width="62" height="62"/>
         <image name="icon_vault" width="62" height="62"/>
         <image name="icon_warcraft_game" width="39" height="39"/>

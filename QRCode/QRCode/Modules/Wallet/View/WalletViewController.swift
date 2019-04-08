@@ -27,7 +27,7 @@ final class WalletViewController: BaseViewController {
     //MARK:- Private method
     private func setupView() {
         
-//        tableView.registerCell(nibName: TransactionHistoryCell.identifier)
+        tableView.disableStickyHeader()
     }
 }
 
