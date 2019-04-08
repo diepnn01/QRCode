@@ -45,6 +45,8 @@
 		5FE08DC8225A5733003B5414 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DC7225A5733003B5414 /* WalletViewModel.swift */; };
 		5FE08DCC225A64BE003B5414 /* TransactionHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DCB225A64BE003B5414 /* TransactionHistoryCell.swift */; };
 		5FE08DCE225A665D003B5414 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DCD225A665D003B5414 /* UITableView+Extension.swift */; };
+		5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DD0225AC784003B5414 /* ProfileViewModel.swift */; };
+		5FE08DD5225AD20C003B5414 /* ProfileItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DD4225AD20C003B5414 /* ProfileItemCell.swift */; };
 		BA33D453EDF3FA97413959DB /* Pods_QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359CC9B4B54295B4CF0C9A9F /* Pods_QRCode.framework */; };
 		E9B4D1D775FEA68D270D6D08 /* Pods_QRCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9799DCAF171450C2D84647 /* Pods_QRCodeTests.framework */; };
 /* End PBXBuildFile section */
@@ -112,6 +114,8 @@
 		5FE08DC7225A5733003B5414 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		5FE08DCB225A64BE003B5414 /* TransactionHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryCell.swift; sourceTree = "<group>"; };
 		5FE08DCD225A665D003B5414 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		5FE08DD0225AC784003B5414 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5FE08DD4225AD20C003B5414 /* ProfileItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItemCell.swift; sourceTree = "<group>"; };
 		791DD3286A76F0A371A688B2 /* Pods-QRCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeTests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeTests/Pods-QRCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		845F9EFE2BDF2ED115B4A43D /* Pods-QRCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C0987E81357272C0EDD28CF /* Pods-QRCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.release.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -359,8 +363,8 @@
 		5FE08D7E22590237003B5414 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				5FE08D89225903A6003B5414 /* ProfileViewController.swift */,
-				5FE08D9722590506003B5414 /* Profile.storyboard */,
+				5FE08DCF225AC74D003B5414 /* ViewModel */,
+				5FE08DD2225AD1EE003B5414 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -465,6 +469,32 @@
 			isa = PBXGroup;
 			children = (
 				5FE08DCB225A64BE003B5414 /* TransactionHistoryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5FE08DCF225AC74D003B5414 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FE08DD0225AC784003B5414 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FE08DD2225AD1EE003B5414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FE08DD3225AD1F5003B5414 /* Cells */,
+				5FE08D89225903A6003B5414 /* ProfileViewController.swift */,
+				5FE08D9722590506003B5414 /* Profile.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FE08DD3225AD1F5003B5414 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5FE08DD4225AD20C003B5414 /* ProfileItemCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -722,6 +752,7 @@
 				5FE08DAC22590B6C003B5414 /* RootRouter.swift in Sources */,
 				5FE08DA7225908D2003B5414 /* AppConstants.swift in Sources */,
 				5FE08DC0225A3C51003B5414 /* CustomInputTextView.swift in Sources */,
+				5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */,
 				5FE08D802259026B003B5414 /* LoginViewController.swift in Sources */,
 				5FE08DA922590917003B5414 /* UIColor+Extension.swift in Sources */,
 				5FE08DB222590E13003B5414 /* UIStoryboard+Extension.swift in Sources */,
@@ -733,6 +764,7 @@
 				5FB143F02256186100218AAE /* AppDelegate.swift in Sources */,
 				5FE08D8C225903B5003B5414 /* ScanViewController.swift in Sources */,
 				5FE08DB022590C30003B5414 /* SessionManager.swift in Sources */,
+				5FE08DD5225AD20C003B5414 /* ProfileItemCell.swift in Sources */,
 				5FE08DB722591102003B5414 /* LoginViewModel.swift in Sources */,
 				5FE08DC5225A52F2003B5414 /* SignUpViewModel.swift in Sources */,
 				5FE08D8E225903C7003B5414 /* WalletViewController.swift in Sources */,
