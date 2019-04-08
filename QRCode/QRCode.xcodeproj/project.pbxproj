@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		31BA19C9A82E90817CDA2791 /* Pods_QRCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3827AC4FB84BA395D3AD69D /* Pods_QRCodeUITests.framework */; };
+		5F4B42A9225B96F5000552E0 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A3225B96E0000552E0 /* ProximaNova-Black.otf */; };
+		5F4B42AA225B96F5000552E0 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A6225B96E0000552E0 /* ProximaNova-Bold.otf */; };
+		5F4B42AB225B96F5000552E0 /* ProximaNova-Extrabld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A8225B96E0000552E0 /* ProximaNova-Extrabld.otf */; };
+		5F4B42AC225B96F5000552E0 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A1225B96E0000552E0 /* ProximaNova-Light.otf */; };
+		5F4B42AD225B96F5000552E0 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A7225B96E0000552E0 /* ProximaNova-Medium.otf */; };
+		5F4B42AE225B96F5000552E0 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A2225B96E0000552E0 /* ProximaNova-Regular.otf */; };
+		5F4B42AF225B96F5000552E0 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A4225B96E0000552E0 /* ProximaNova-Semibold.otf */; };
+		5F4B42B0225B96F5000552E0 /* ProximaNova-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42A5225B96E0000552E0 /* ProximaNova-Thin.otf */; };
+		5F4B42B4225B9F6F000552E0 /* MaskViewOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42B3225B9F6F000552E0 /* MaskViewOverlay.swift */; };
+		5F4B42B6225B9FB7000552E0 /* MaskViewOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42B5225B9FB7000552E0 /* MaskViewOverlay.xib */; };
+		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
 		5FB143FA2256186200218AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB143F92256186200218AAE /* Assets.xcassets */; };
@@ -71,6 +82,17 @@
 /* Begin PBXFileReference section */
 		341585625D4E299425052496 /* Pods-QRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCode.debug.xcconfig"; path = "Target Support Files/Pods-QRCode/Pods-QRCode.debug.xcconfig"; sourceTree = "<group>"; };
 		359CC9B4B54295B4CF0C9A9F /* Pods_QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4B42A1225B96E0000552E0 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		5F4B42A2225B96E0000552E0 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		5F4B42A3225B96E0000552E0 /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		5F4B42A4225B96E0000552E0 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		5F4B42A5225B96E0000552E0 /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Thin.otf"; sourceTree = "<group>"; };
+		5F4B42A6225B96E0000552E0 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		5F4B42A7225B96E0000552E0 /* ProximaNova-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium.otf"; sourceTree = "<group>"; };
+		5F4B42A8225B96E0000552E0 /* ProximaNova-Extrabld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabld.otf"; sourceTree = "<group>"; };
+		5F4B42B3225B9F6F000552E0 /* MaskViewOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskViewOverlay.swift; sourceTree = "<group>"; };
+		5F4B42B5225B9FB7000552E0 /* MaskViewOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaskViewOverlay.xib; sourceTree = "<group>"; };
+		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB143F72256186100218AAE /* QRCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QRCode.xcdatamodel; sourceTree = "<group>"; };
@@ -164,6 +186,23 @@
 				8C0987E81357272C0EDD28CF /* Pods-QRCodeUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F4B42B1225B9A3E000552E0 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		5F4B42B2225B9A48000552E0 /* MaskView */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42B3225B9F6F000552E0 /* MaskViewOverlay.swift */,
+				5F4B42B5225B9FB7000552E0 /* MaskViewOverlay.xib */,
+			);
+			path = MaskView;
 			sourceTree = "<group>";
 		};
 		5FB143E32256186100218AAE = {
@@ -283,6 +322,14 @@
 		5FE08D7522590080003B5414 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B42A3225B96E0000552E0 /* ProximaNova-Black.otf */,
+				5F4B42A6225B96E0000552E0 /* ProximaNova-Bold.otf */,
+				5F4B42A8225B96E0000552E0 /* ProximaNova-Extrabld.otf */,
+				5F4B42A1225B96E0000552E0 /* ProximaNova-Light.otf */,
+				5F4B42A7225B96E0000552E0 /* ProximaNova-Medium.otf */,
+				5F4B42A2225B96E0000552E0 /* ProximaNova-Regular.otf */,
+				5F4B42A4225B96E0000552E0 /* ProximaNova-Semibold.otf */,
+				5F4B42A5225B96E0000552E0 /* ProximaNova-Thin.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -354,8 +401,8 @@
 		5FE08D7D22590229003B5414 /* Scan */ = {
 			isa = PBXGroup;
 			children = (
-				5FE08D8B225903B5003B5414 /* ScanViewController.swift */,
-				5FE08D9922590510003B5414 /* Scan.storyboard */,
+				5FE08DD6225AD3AA003B5414 /* ViewModel */,
+				5FE08DD7225AD3B7003B5414 /* View */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -499,6 +546,24 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		5FE08DD6225AD3AA003B5414 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FE08DD7225AD3B7003B5414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42B2225B9A48000552E0 /* MaskView */,
+				5F4B42B1225B9A3E000552E0 /* Scanner */,
+				5FE08D8B225903B5003B5414 /* ScanViewController.swift */,
+				5FE08D9922590510003B5414 /* Scan.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6FF9CBFE97CE909713E997BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -617,6 +682,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4B42B6225B9FB7000552E0 /* MaskViewOverlay.xib in Resources */,
+				5F4B42A9225B96F5000552E0 /* ProximaNova-Black.otf in Resources */,
+				5F4B42AA225B96F5000552E0 /* ProximaNova-Bold.otf in Resources */,
+				5F4B42AB225B96F5000552E0 /* ProximaNova-Extrabld.otf in Resources */,
+				5F4B42AC225B96F5000552E0 /* ProximaNova-Light.otf in Resources */,
+				5F4B42AD225B96F5000552E0 /* ProximaNova-Medium.otf in Resources */,
+				5F4B42AE225B96F5000552E0 /* ProximaNova-Regular.otf in Resources */,
+				5F4B42AF225B96F5000552E0 /* ProximaNova-Semibold.otf in Resources */,
+				5F4B42B0225B96F5000552E0 /* ProximaNova-Thin.otf in Resources */,
 				5FE08D9422590491003B5414 /* Tabbar.storyboard in Resources */,
 				5FE08D9F2259060D003B5414 /* Configuration.plist in Resources */,
 				5FE08D9022590405003B5414 /* Login.storyboard in Resources */,
@@ -750,6 +824,7 @@
 				5FE08DAE22590BC1003B5414 /* DeepLinkHandler.swift in Sources */,
 				5FE08D96225904D8003B5414 /* TabbarItem.swift in Sources */,
 				5FE08DAC22590B6C003B5414 /* RootRouter.swift in Sources */,
+				5F4B42B4225B9F6F000552E0 /* MaskViewOverlay.swift in Sources */,
 				5FE08DA7225908D2003B5414 /* AppConstants.swift in Sources */,
 				5FE08DC0225A3C51003B5414 /* CustomInputTextView.swift in Sources */,
 				5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */,
@@ -760,6 +835,7 @@
 				5FE08DBA225A3583003B5414 /* BaseCustomView.swift in Sources */,
 				5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */,
 				5FE08D8A225903A6003B5414 /* ProfileViewController.swift in Sources */,
+				5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */,
 				5FE08DCE225A665D003B5414 /* UITableView+Extension.swift in Sources */,
 				5FB143F02256186100218AAE /* AppDelegate.swift in Sources */,
 				5FE08D8C225903B5003B5414 /* ScanViewController.swift in Sources */,

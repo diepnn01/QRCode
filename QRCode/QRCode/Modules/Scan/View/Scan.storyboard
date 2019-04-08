@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0n3-VA-jTC">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Medium.otf">
+            <string>ProximaNova-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Scan View Controller-->
+        <scene sceneID="icP-LK-ZZp">
+            <objects>
+                <viewController storyboardIdentifier="ScanViewController" id="0n3-VA-jTC" customClass="ScanViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jd-Lk-QH3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3b-bK-gqY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="748"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCO-fQ-k2x" customClass="MaskViewOverlay" customModule="QRCode" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="748"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0j-3W-tND">
+                                <rect key="frame" x="0.0" y="792" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place QR code in the frame to scan it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcA-Zu-aKN">
+                                        <rect key="frame" x="92.5" y="26" width="229" height="18"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
+                                        <color key="textColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="LLG-bJ-Y6c"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TcA-Zu-aKN" secondAttribute="trailing" constant="16" id="NcU-Wc-qKZ"/>
+                                    <constraint firstItem="TcA-Zu-aKN" firstAttribute="centerX" secondItem="F0j-3W-tND" secondAttribute="centerX" id="d9x-zK-RK7"/>
+                                    <constraint firstItem="TcA-Zu-aKN" firstAttribute="centerY" secondItem="F0j-3W-tND" secondAttribute="centerY" id="eEE-xF-Pi8"/>
+                                    <constraint firstItem="TcA-Zu-aKN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F0j-3W-tND" secondAttribute="leading" constant="16" id="sAe-C7-hYP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F0j-3W-tND" firstAttribute="top" secondItem="t3b-bK-gqY" secondAttribute="bottom" id="2lv-58-2jP"/>
+                            <constraint firstItem="YCO-fQ-k2x" firstAttribute="leading" secondItem="t3b-bK-gqY" secondAttribute="leading" id="3rl-f2-L06"/>
+                            <constraint firstItem="yYV-t4-Cgw" firstAttribute="bottom" secondItem="F0j-3W-tND" secondAttribute="bottom" id="8Po-KL-BnQ"/>
+                            <constraint firstItem="t3b-bK-gqY" firstAttribute="top" secondItem="yYV-t4-Cgw" secondAttribute="top" id="BBU-NC-CMX"/>
+                            <constraint firstItem="yYV-t4-Cgw" firstAttribute="trailing" secondItem="F0j-3W-tND" secondAttribute="trailing" id="E1Q-DL-Vv3"/>
+                            <constraint firstItem="t3b-bK-gqY" firstAttribute="leading" secondItem="yYV-t4-Cgw" secondAttribute="leading" id="J14-Rd-x8x"/>
+                            <constraint firstItem="F0j-3W-tND" firstAttribute="leading" secondItem="yYV-t4-Cgw" secondAttribute="leading" id="LUB-XQ-Y0x"/>
+                            <constraint firstItem="YCO-fQ-k2x" firstAttribute="trailing" secondItem="t3b-bK-gqY" secondAttribute="trailing" id="TK9-b5-sy6"/>
+                            <constraint firstItem="yYV-t4-Cgw" firstAttribute="trailing" secondItem="t3b-bK-gqY" secondAttribute="trailing" id="s7V-1Z-qZv"/>
+                            <constraint firstItem="YCO-fQ-k2x" firstAttribute="bottom" secondItem="t3b-bK-gqY" secondAttribute="bottom" id="wKU-eI-x6j"/>
+                            <constraint firstItem="YCO-fQ-k2x" firstAttribute="top" secondItem="t3b-bK-gqY" secondAttribute="top" id="zKh-8C-ir5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yYV-t4-Cgw"/>
+                    </view>
+                    <connections>
+                        <outlet property="scannerView" destination="t3b-bK-gqY" id="CPo-pB-94Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3g0-xO-aps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285.50724637681162" y="-240.40178571428569"/>
+        </scene>
+    </scenes>
+</document>

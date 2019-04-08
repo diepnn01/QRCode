@@ -8,8 +8,8 @@
 
 import UIKit
 
-let gradientStartColor = UIColor.colorFromHex("1e154b")
-let gradientEndColor = UIColor.colorFromHex("4a2859")
+let gradientStartColor = UIColor.colorFromHex("3023AE")
+let gradientEndColor = UIColor.colorFromHex("C86DD7")
 let activeColor = UIColor.colorFromHex("fcb513")
 
 

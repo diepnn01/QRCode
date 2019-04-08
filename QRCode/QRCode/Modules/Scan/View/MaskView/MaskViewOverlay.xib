@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaskViewOverlay" customModule="QRCode" customModuleProvider="target">
+            <connections>
+                <outlet property="croppedView" destination="wvX-fZ-zRT" id="E08-fY-BVa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="413"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZC-5H-c2z">
+                    <rect key="frame" x="72.5" y="82.5" width="269" height="258.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="258.5" id="93j-Mj-qgd"/>
+                        <constraint firstAttribute="width" constant="269" id="u7z-WV-jaK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvX-fZ-zRT">
+                    <rect key="frame" x="74.5" y="84.5" width="265" height="254.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="254.5" id="6em-HY-KGX"/>
+                        <constraint firstAttribute="width" constant="265" id="pQJ-zU-Rex"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.545196963028169" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qZC-5H-c2z" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Fyk-z8-ot9"/>
+                <constraint firstItem="qZC-5H-c2z" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="c6g-94-S04"/>
+                <constraint firstItem="wvX-fZ-zRT" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="hWW-d6-BAo"/>
+                <constraint firstItem="wvX-fZ-zRT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="y7m-Fr-PxK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-60.869565217391312" y="-26.450892857142858"/>
+        </view>
+    </objects>
+</document>
