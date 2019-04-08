@@ -21,7 +21,7 @@ final class WalletViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        viewTransactionHistory.roundCorners(corners: [.topRight, .topLeft], radius: 12)
+        viewTransactionHistory.roundCorners(corners: [.topRight, .topLeft], radius: 20)
     }
     
     //MARK:- Private method

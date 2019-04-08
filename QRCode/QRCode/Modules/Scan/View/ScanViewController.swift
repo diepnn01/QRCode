@@ -41,7 +41,15 @@ final class ScanViewController: BaseViewController {
     }
     
     private func handleCode(code: String) {
-        print(code)
+        guard let destinationVC = UIStoryboard.loadViewControler("Scan", nameController: PaymentViewController.className) as? PaymentViewController else {
+            return
+        }
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        appDelegate.router.rootViewController?.pushViewController(destinationVC, animated: true)
     }
 }
 

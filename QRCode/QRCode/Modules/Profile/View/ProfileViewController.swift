@@ -25,7 +25,7 @@ final class ProfileViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        containerView.roundCorners(corners: [.topRight, .topLeft], radius: 12)
+        containerView.roundCorners(corners: [.topRight, .topLeft], radius: 20)
     }
 }
 

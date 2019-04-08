@@ -8,12 +8,14 @@
 
 import UIKit
 
-class RootRouter {
+final class RootRouter {
     
     enum MainRouteStoryboard {
         static let Login = "Login"
         static let Tabbar = "Tabbar"
     }
+    
+    var rootViewController: UINavigationController?
     
     /** Replaces root view controller. You can specify the replacment animation type.
      If no animation type is specified, there is no animation */
@@ -22,7 +24,10 @@ class RootRouter {
             fatalError("No window in app")
         }
         
-        let rootViewController = UINavigationController(rootViewController: controller)
+        rootViewController = UINavigationController(rootViewController: controller)
+        guard let rootViewController = rootViewController else {
+            return
+        }
         rootViewController.isNavigationBarHidden = true
         if let animationOptions = animatedWithOptions, window.rootViewController != nil {
             window.rootViewController = rootViewController
