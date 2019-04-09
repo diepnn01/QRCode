@@ -10,5 +10,5 @@ final class SessionManager {
     
     static let shared = SessionManager()
     
-    var isLogin: Bool = true
+    var isLogin: Bool = false
 }

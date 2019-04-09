@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Light.otf">
+            <string>ProximaNova-Light</string>
+        </array>
+        <array key="ProximaNova-Medium.otf">
+            <string>ProximaNova-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="Tnq-QS-mQw">
@@ -25,14 +33,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YFP-W1-kZ0">
-                                                <rect key="frame" x="85" y="165" width="244" height="36"/>
+                                                <rect key="frame" x="85" y="145" width="244" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="8RH-mU-Yvz"/>
                                                     <constraint firstAttribute="width" constant="244" id="m91-b6-Zcw"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23M-2I-Uuh">
-                                                <rect key="frame" x="169" y="226" width="76" height="1"/>
+                                                <rect key="frame" x="169" y="206" width="76" height="1"/>
                                                 <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="y1w-Xc-Adl"/>
@@ -40,30 +48,30 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IG6-vL-5wP">
-                                                <rect key="frame" x="176" y="252" width="62" height="23.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <rect key="frame" x="157" y="236.5" width="100" height="41.5"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="34"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JDF-qH-qf0">
-                                                <rect key="frame" x="67" y="300.5" width="280.5" height="20"/>
+                                                <rect key="frame" x="62" y="303" width="290.5" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo4-HY-fih">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="20"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="20"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_passport_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-IJ-DtV">
-                                                        <rect key="frame" x="77.5" y="0.0" width="131" height="20"/>
+                                                        <rect key="frame" x="83" y="0.0" width="131" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="e6n-3E-e1U"/>
                                                             <constraint firstAttribute="width" constant="131" id="jvw-NY-sZ8"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="948-a7-dOE">
-                                                        <rect key="frame" x="213.5" y="0.0" width="67" height="20"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <rect key="frame" x="219" y="0.0" width="71.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -71,7 +79,7 @@
                                                 <color key="backgroundColor" red="0.9126616716" green="0.99920660260000005" blue="0.40539938209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </stackView>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60F-Zr-SDD" customClass="CustomInputTextView" customModule="QRCode" customModuleProvider="target">
-                                                <rect key="frame" x="36" y="370.5" width="342" height="50"/>
+                                                <rect key="frame" x="36" y="379" width="342" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ed5-90-pAr"/>
@@ -84,7 +92,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pET-bg-DiY" customClass="CustomInputTextView" customModule="QRCode" customModuleProvider="target">
-                                                <rect key="frame" x="36" y="440.5" width="342" height="50"/>
+                                                <rect key="frame" x="36" y="451" width="342" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aea-cB-Ezh">
                                                         <rect key="frame" x="302" y="9" width="32" height="32"/>
@@ -109,7 +117,8 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAh-A6-M9y">
-                                                <rect key="frame" x="147" y="515.5" width="120" height="30"/>
+                                                <rect key="frame" x="139.5" y="524" width="135" height="34"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="I forgot password">
                                                     <color key="titleColor" red="0.99607843137254903" green="0.75294117647058822" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -118,12 +127,12 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOm-M0-KUa">
-                                                <rect key="frame" x="36" y="570.5" width="342" height="50"/>
+                                                <rect key="frame" x="36" y="590" width="342" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.75795716047286987" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="egq-jT-ECC"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="20"/>
                                                 <state key="normal" title="Log in">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -137,12 +146,12 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJJ-LX-Ru5">
-                                                <rect key="frame" x="36" y="645.5" width="341" height="50"/>
+                                                <rect key="frame" x="36" y="653" width="341" height="50"/>
                                                 <color key="backgroundColor" red="0.49411764705882355" green="0.44313725490196076" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wFv-qI-HoV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="20"/>
                                                 <state key="normal" title="Sign up">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -163,16 +172,16 @@
                                             <constraint firstAttribute="trailing" secondItem="60F-Zr-SDD" secondAttribute="trailing" constant="36" id="4TM-Wf-qcG"/>
                                             <constraint firstItem="60F-Zr-SDD" firstAttribute="leading" secondItem="zDs-xh-Fiq" secondAttribute="leading" constant="36" id="4ji-4u-fBR"/>
                                             <constraint firstAttribute="trailing" secondItem="uJJ-LX-Ru5" secondAttribute="trailing" constant="37" id="5eV-hD-6Rc"/>
-                                            <constraint firstItem="YFP-W1-kZ0" firstAttribute="top" secondItem="zDs-xh-Fiq" secondAttribute="top" constant="165" id="8Lm-kq-ySB"/>
-                                            <constraint firstItem="zAh-A6-M9y" firstAttribute="top" secondItem="pET-bg-DiY" secondAttribute="bottom" constant="25" id="9Rm-E9-NLP"/>
+                                            <constraint firstItem="YFP-W1-kZ0" firstAttribute="top" secondItem="zDs-xh-Fiq" secondAttribute="top" constant="145" id="8Lm-kq-ySB"/>
+                                            <constraint firstItem="zAh-A6-M9y" firstAttribute="top" secondItem="pET-bg-DiY" secondAttribute="bottom" constant="23" id="9Rm-E9-NLP"/>
                                             <constraint firstAttribute="trailing" secondItem="pET-bg-DiY" secondAttribute="trailing" constant="36" id="FxY-oQ-y5Y"/>
                                             <constraint firstItem="uJJ-LX-Ru5" firstAttribute="leading" secondItem="zDs-xh-Fiq" secondAttribute="leading" constant="36" id="M9a-tn-HeN"/>
                                             <constraint firstItem="zAh-A6-M9y" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="OhU-b1-eI3"/>
-                                            <constraint firstItem="60F-Zr-SDD" firstAttribute="top" secondItem="JDF-qH-qf0" secondAttribute="bottom" constant="50" id="QUJ-Fy-mVb"/>
-                                            <constraint firstItem="pET-bg-DiY" firstAttribute="top" secondItem="60F-Zr-SDD" secondAttribute="bottom" constant="20" id="WJs-vv-qmv"/>
+                                            <constraint firstItem="60F-Zr-SDD" firstAttribute="top" secondItem="JDF-qH-qf0" secondAttribute="bottom" constant="56" id="QUJ-Fy-mVb"/>
+                                            <constraint firstItem="pET-bg-DiY" firstAttribute="top" secondItem="60F-Zr-SDD" secondAttribute="bottom" constant="22" id="WJs-vv-qmv"/>
                                             <constraint firstItem="JDF-qH-qf0" firstAttribute="top" secondItem="IG6-vL-5wP" secondAttribute="bottom" constant="25" id="Xj8-Q3-VLK"/>
                                             <constraint firstItem="pET-bg-DiY" firstAttribute="leading" secondItem="zDs-xh-Fiq" secondAttribute="leading" constant="36" id="bIi-N7-dwz"/>
-                                            <constraint firstItem="IG6-vL-5wP" firstAttribute="top" secondItem="23M-2I-Uuh" secondAttribute="bottom" constant="25" id="bcF-Eh-eh3"/>
+                                            <constraint firstItem="IG6-vL-5wP" firstAttribute="top" secondItem="23M-2I-Uuh" secondAttribute="bottom" constant="29.5" id="bcF-Eh-eh3"/>
                                             <constraint firstItem="mOm-M0-KUa" firstAttribute="leading" secondItem="zDs-xh-Fiq" secondAttribute="leading" constant="36" id="dNU-Bh-ERN"/>
                                             <constraint firstItem="JDF-qH-qf0" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="dmP-XZ-uhS"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uJJ-LX-Ru5" secondAttribute="bottom" constant="50" id="dsq-Sk-kXk"/>
@@ -180,8 +189,8 @@
                                             <constraint firstItem="23M-2I-Uuh" firstAttribute="top" secondItem="YFP-W1-kZ0" secondAttribute="bottom" constant="25" id="j5N-cc-4oc"/>
                                             <constraint firstAttribute="trailing" secondItem="mOm-M0-KUa" secondAttribute="trailing" constant="36" id="pH0-U2-oS6"/>
                                             <constraint firstItem="IG6-vL-5wP" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="qYc-gu-dL7"/>
-                                            <constraint firstItem="uJJ-LX-Ru5" firstAttribute="top" secondItem="mOm-M0-KUa" secondAttribute="bottom" constant="25" id="ujE-Za-myW"/>
-                                            <constraint firstItem="mOm-M0-KUa" firstAttribute="top" secondItem="zAh-A6-M9y" secondAttribute="bottom" constant="25" id="ySy-wc-qUn"/>
+                                            <constraint firstItem="uJJ-LX-Ru5" firstAttribute="top" secondItem="mOm-M0-KUa" secondAttribute="bottom" constant="13" id="ujE-Za-myW"/>
+                                            <constraint firstItem="mOm-M0-KUa" firstAttribute="top" secondItem="zAh-A6-M9y" secondAttribute="bottom" constant="32" id="ySy-wc-qUn"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -233,7 +242,7 @@
     </scenes>
     <resources>
         <image name="icon-logo" width="122" height="18"/>
-        <image name="icon_passport_logo" width="65.5" height="10"/>
+        <image name="icon_passport_logo" width="164" height="25"/>
         <image name="icon_touch _id" width="17" height="17"/>
     </resources>
 </document>

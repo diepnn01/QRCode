@@ -20,6 +20,10 @@ class BaseViewController: UIViewController {
     }
     
     private func setupGradient() {
-        view.setGradient(startColor: gradientStartColor, endColor: gradientEndColor)
+        let imageView = UIImageView(frame: UIScreen.main.bounds)
+        imageView.image = UIImage(named: "bg_image")
+        imageView.contentMode = .scaleAspectFill
+        view.addSubview(imageView)
+        view.sendSubviewToBack(imageView)
     }
 }
