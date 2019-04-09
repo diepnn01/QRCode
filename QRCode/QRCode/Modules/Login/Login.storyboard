@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDs-xh-Fiq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YFP-W1-kZ0">
                                                 <rect key="frame" x="85" y="145" width="244" height="36"/>
@@ -175,6 +175,7 @@
                                             <constraint firstItem="YFP-W1-kZ0" firstAttribute="top" secondItem="zDs-xh-Fiq" secondAttribute="top" constant="145" id="8Lm-kq-ySB"/>
                                             <constraint firstItem="zAh-A6-M9y" firstAttribute="top" secondItem="pET-bg-DiY" secondAttribute="bottom" constant="23" id="9Rm-E9-NLP"/>
                                             <constraint firstAttribute="trailing" secondItem="pET-bg-DiY" secondAttribute="trailing" constant="36" id="FxY-oQ-y5Y"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uJJ-LX-Ru5" secondAttribute="bottom" constant="50" id="Jd4-Lz-ke9"/>
                                             <constraint firstItem="uJJ-LX-Ru5" firstAttribute="leading" secondItem="zDs-xh-Fiq" secondAttribute="leading" constant="36" id="M9a-tn-HeN"/>
                                             <constraint firstItem="zAh-A6-M9y" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="OhU-b1-eI3"/>
                                             <constraint firstItem="60F-Zr-SDD" firstAttribute="top" secondItem="JDF-qH-qf0" secondAttribute="bottom" constant="56" id="QUJ-Fy-mVb"/>
@@ -184,7 +185,6 @@
                                             <constraint firstItem="IG6-vL-5wP" firstAttribute="top" secondItem="23M-2I-Uuh" secondAttribute="bottom" constant="29.5" id="bcF-Eh-eh3"/>
                                             <constraint firstItem="mOm-M0-KUa" firstAttribute="leading" secondItem="zDs-xh-Fiq" secondAttribute="leading" constant="36" id="dNU-Bh-ERN"/>
                                             <constraint firstItem="JDF-qH-qf0" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="dmP-XZ-uhS"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uJJ-LX-Ru5" secondAttribute="bottom" constant="50" id="dsq-Sk-kXk"/>
                                             <constraint firstItem="23M-2I-Uuh" firstAttribute="centerX" secondItem="zDs-xh-Fiq" secondAttribute="centerX" id="eso-zg-hdv"/>
                                             <constraint firstItem="23M-2I-Uuh" firstAttribute="top" secondItem="YFP-W1-kZ0" secondAttribute="bottom" constant="25" id="j5N-cc-4oc"/>
                                             <constraint firstAttribute="trailing" secondItem="mOm-M0-KUa" secondAttribute="trailing" constant="36" id="pH0-U2-oS6"/>
@@ -195,10 +195,8 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="zDs-xh-Fiq" firstAttribute="width" secondItem="IRF-Cr-gI9" secondAttribute="width" id="2X5-ZN-Y6L"/>
                                     <constraint firstAttribute="trailing" secondItem="zDs-xh-Fiq" secondAttribute="trailing" id="OQu-TY-kch"/>
                                     <constraint firstAttribute="bottom" secondItem="zDs-xh-Fiq" secondAttribute="bottom" id="TtR-HN-M96"/>
-                                    <constraint firstItem="zDs-xh-Fiq" firstAttribute="height" secondItem="IRF-Cr-gI9" secondAttribute="height" id="Zfo-9a-RZ3"/>
                                     <constraint firstItem="zDs-xh-Fiq" firstAttribute="leading" secondItem="IRF-Cr-gI9" secondAttribute="leading" id="eSn-TY-EFu"/>
                                     <constraint firstItem="zDs-xh-Fiq" firstAttribute="top" secondItem="IRF-Cr-gI9" secondAttribute="top" id="hbs-3a-hZG"/>
                                 </constraints>
@@ -207,9 +205,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IRF-Cr-gI9" firstAttribute="leading" secondItem="fUS-ro-GV6" secondAttribute="leading" id="07P-R5-cBh"/>
+                            <constraint firstItem="zDs-xh-Fiq" firstAttribute="height" secondItem="MFh-mq-l7v" secondAttribute="height" priority="250" id="EBe-Us-zyG"/>
                             <constraint firstItem="IRF-Cr-gI9" firstAttribute="top" secondItem="fUS-ro-GV6" secondAttribute="top" id="Lpu-cv-Hmu"/>
                             <constraint firstItem="fUS-ro-GV6" firstAttribute="trailing" secondItem="IRF-Cr-gI9" secondAttribute="trailing" id="UQK-yb-Kuq"/>
                             <constraint firstItem="fUS-ro-GV6" firstAttribute="bottom" secondItem="IRF-Cr-gI9" secondAttribute="bottom" id="aPc-gr-iHw"/>
+                            <constraint firstItem="zDs-xh-Fiq" firstAttribute="width" secondItem="MFh-mq-l7v" secondAttribute="width" id="yCh-3t-WX2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fUS-ro-GV6"/>
                     </view>

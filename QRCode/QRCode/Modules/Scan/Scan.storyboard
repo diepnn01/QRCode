@@ -299,7 +299,7 @@
                                                     <constraint firstItem="sbb-wz-NLJ" firstAttribute="top" secondItem="gAk-nl-bRe" secondAttribute="bottom" constant="6" id="gpg-Bn-Yva"/>
                                                     <constraint firstItem="OQX-hb-xuf" firstAttribute="leading" secondItem="shA-n2-s3C" secondAttribute="leading" id="kGE-zU-rtN"/>
                                                     <constraint firstItem="K8p-nN-KEF" firstAttribute="leading" secondItem="XXx-pY-oPZ" secondAttribute="leading" id="kVr-Fy-0YZ"/>
-                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Viq-xh-2Tg" secondAttribute="bottom" constant="20" id="lB3-tw-oma"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Viq-xh-2Tg" secondAttribute="bottom" constant="50" id="lB3-tw-oma"/>
                                                     <constraint firstItem="gAk-nl-bRe" firstAttribute="leading" secondItem="OQX-hb-xuf" secondAttribute="leading" id="ooJ-NP-969"/>
                                                     <constraint firstItem="sbb-wz-NLJ" firstAttribute="leading" secondItem="gAk-nl-bRe" secondAttribute="leading" id="rFm-lE-Ma5"/>
                                                     <constraint firstAttribute="trailing" secondItem="Viq-xh-2Tg" secondAttribute="trailing" constant="36" id="y58-Q0-b8A"/>
@@ -310,10 +310,8 @@
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="ebi-m9-M0P" firstAttribute="height" secondItem="rQa-Gd-VNd" secondAttribute="height" priority="250" id="FkE-bm-0A0"/>
                                             <constraint firstItem="ebi-m9-M0P" firstAttribute="leading" secondItem="rQa-Gd-VNd" secondAttribute="leading" id="Sfj-Pu-OKL"/>
                                             <constraint firstItem="ebi-m9-M0P" firstAttribute="top" secondItem="rQa-Gd-VNd" secondAttribute="top" id="UZY-8M-Qvy"/>
-                                            <constraint firstItem="ebi-m9-M0P" firstAttribute="width" secondItem="rQa-Gd-VNd" secondAttribute="width" id="Zew-97-jBY"/>
                                             <constraint firstAttribute="trailing" secondItem="ebi-m9-M0P" secondAttribute="trailing" id="bzT-FU-QyO"/>
                                             <constraint firstItem="ebi-m9-M0P" firstAttribute="bottom" secondItem="rQa-Gd-VNd" secondAttribute="bottom" id="zVb-2A-dEo"/>
                                         </constraints>
@@ -325,6 +323,8 @@
                                     <constraint firstItem="rQa-Gd-VNd" firstAttribute="top" secondItem="WwI-ll-9hI" secondAttribute="top" id="RBy-pl-g2f"/>
                                     <constraint firstItem="rQa-Gd-VNd" firstAttribute="leading" secondItem="WwI-ll-9hI" secondAttribute="leading" id="vQw-mL-Y5a"/>
                                     <constraint firstAttribute="trailing" secondItem="rQa-Gd-VNd" secondAttribute="trailing" id="w4O-mh-Fv0"/>
+                                    <constraint firstItem="ebi-m9-M0P" firstAttribute="height" secondItem="WwI-ll-9hI" secondAttribute="height" priority="250" id="xji-dE-fkT"/>
+                                    <constraint firstItem="ebi-m9-M0P" firstAttribute="width" secondItem="WwI-ll-9hI" secondAttribute="width" id="yl0-JY-F3B"/>
                                 </constraints>
                             </view>
                         </subviews>
