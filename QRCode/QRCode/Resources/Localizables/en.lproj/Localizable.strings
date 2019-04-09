@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  QRCode
+
+  Created by Diep Nguyen on 4/9/19.
+  Copyright © 2019 Diep Nguyen. All rights reserved.
+*/
+
+//Common
+"common.ok" = "OK";
+
+//Login
+"message.invalid.password" = "Please enter a valid password";
+"message.invalid.email" = "Please enter a valid email id";

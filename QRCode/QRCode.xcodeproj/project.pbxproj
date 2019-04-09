@@ -27,6 +27,15 @@
 		5F4B42C8225C4722000552E0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42C7225C4722000552E0 /* UserService.swift */; };
 		5F4B42CB225C51F2000552E0 /* LoginParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42CA225C51F2000552E0 /* LoginParams.swift */; };
 		5F4B42CD225C5392000552E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42CC225C5392000552E0 /* User.swift */; };
+		5F4B42D0225C976B000552E0 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42CF225C976B000552E0 /* PasswordViewModel.swift */; };
+		5F4B42D2225C9784000552E0 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42D1225C9784000552E0 /* EmailViewModel.swift */; };
+		5F4B42D4225C97B0000552E0 /* ValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42D3225C97B0000552E0 /* ValidationViewModel.swift */; };
+		5F4B42D7225C9AB1000552E0 /* DataBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42D6225C9AB1000552E0 /* DataBinding.swift */; };
+		5F4B42D9225CAA06000552E0 /* ValidateEmailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42D8225CAA06000552E0 /* ValidateEmailTests.swift */; };
+		5F4B42DB225CAAC5000552E0 /* ValidatePasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42DA225CAAC5000552E0 /* ValidatePasswordTests.swift */; };
+		5F4B42DE225CAD09000552E0 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42DD225CAD09000552E0 /* Spinner.swift */; };
+		5F4B42E3225CDCB5000552E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42E5225CDCB5000552E0 /* Localizable.strings */; };
+		5F4B42E8225CDD05000552E0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42E7225CDD05000552E0 /* String+Extension.swift */; };
 		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
@@ -112,6 +121,18 @@
 		5F4B42C7225C4722000552E0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		5F4B42CA225C51F2000552E0 /* LoginParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParams.swift; sourceTree = "<group>"; };
 		5F4B42CC225C5392000552E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5F4B42CF225C976B000552E0 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		5F4B42D1225C9784000552E0 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		5F4B42D3225C97B0000552E0 /* ValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewModel.swift; sourceTree = "<group>"; };
+		5F4B42D6225C9AB1000552E0 /* DataBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBinding.swift; sourceTree = "<group>"; };
+		5F4B42D8225CAA06000552E0 /* ValidateEmailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmailTests.swift; sourceTree = "<group>"; };
+		5F4B42DA225CAAC5000552E0 /* ValidatePasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatePasswordTests.swift; sourceTree = "<group>"; };
+		5F4B42DD225CAD09000552E0 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		5F4B42E1225CDCA3000552E0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5F4B42E2225CDCAB000552E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5F4B42E4225CDCB5000552E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5F4B42E6225CDCB7000552E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5F4B42E7225CDD05000552E0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +286,14 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		5F4B42DC225CAD09000552E0 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42DD225CAD09000552E0 /* Spinner.swift */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
 		5FB143E32256186100218AAE = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +335,8 @@
 			children = (
 				5FB144072256186200218AAE /* QRCodeTests.swift */,
 				5FB144092256186200218AAE /* Info.plist */,
+				5F4B42D8225CAA06000552E0 /* ValidateEmailTests.swift */,
+				5F4B42DA225CAAC5000552E0 /* ValidatePasswordTests.swift */,
 			);
 			path = QRCodeTests;
 			sourceTree = "<group>";
@@ -400,6 +431,7 @@
 		5FE08D762259008F003B5414 /* Localizables */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B42E5225CDCB5000552E0 /* Localizable.strings */,
 			);
 			path = Localizables;
 			sourceTree = "<group>";
@@ -505,6 +537,7 @@
 				5FE08DA822590917003B5414 /* UIColor+Extension.swift */,
 				5FE08DB122590E13003B5414 /* UIStoryboard+Extension.swift */,
 				5FE08DB322590ED8003B5414 /* NSObject.swift */,
+				5F4B42E7225CDD05000552E0 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -512,6 +545,7 @@
 		5FE08DA22259081C003B5414 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B42D6225C9AB1000552E0 /* DataBinding.swift */,
 				5FE08DAB22590B6C003B5414 /* RootRouter.swift */,
 				5FE08DAD22590BC1003B5414 /* DeepLinkHandler.swift */,
 			);
@@ -530,6 +564,9 @@
 			isa = PBXGroup;
 			children = (
 				5FE08DB622591102003B5414 /* LoginViewModel.swift */,
+				5F4B42CF225C976B000552E0 /* PasswordViewModel.swift */,
+				5F4B42D1225C9784000552E0 /* EmailViewModel.swift */,
+				5F4B42D3225C97B0000552E0 /* ValidationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -537,6 +574,7 @@
 		5FE08DB8225A3565003B5414 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B42DC225CAD09000552E0 /* Spinner */,
 				5FE08DBE225A3C38003B5414 /* InputTextView */,
 				5FE08DB9225A3583003B5414 /* BaseCustomView.swift */,
 			);
@@ -738,6 +776,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				vi,
 			);
 			mainGroup = 5FB143E32256186100218AAE;
 			productRefGroup = 5FB143ED2256186100218AAE /* Products */;
@@ -761,6 +801,7 @@
 				5F4B42AA225B96F5000552E0 /* ProximaNova-Bold.otf in Resources */,
 				5F4B42AB225B96F5000552E0 /* ProximaNova-Extrabld.otf in Resources */,
 				5F4B42AC225B96F5000552E0 /* ProximaNova-Light.otf in Resources */,
+				5F4B42E3225CDCB5000552E0 /* Localizable.strings in Resources */,
 				5F4B42AD225B96F5000552E0 /* ProximaNova-Medium.otf in Resources */,
 				5F4B42AE225B96F5000552E0 /* ProximaNova-Regular.otf in Resources */,
 				5F4B42AF225B96F5000552E0 /* ProximaNova-Semibold.otf in Resources */,
@@ -924,8 +965,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4B42D0225C976B000552E0 /* PasswordViewModel.swift in Sources */,
 				5FE08D85225902A3003B5414 /* SignUpViewController.swift in Sources */,
 				5FE08D832259027E003B5414 /* BaseViewController.swift in Sources */,
+				5F4B42D4225C97B0000552E0 /* ValidationViewModel.swift in Sources */,
 				5FE08D882259038B003B5414 /* TabbarViewController.swift in Sources */,
 				5FE08DB422590ED8003B5414 /* NSObject.swift in Sources */,
 				5FE994EA225C5B6A004726B0 /* ProfileItem.swift in Sources */,
@@ -934,12 +977,15 @@
 				5FE08D96225904D8003B5414 /* TabbarItem.swift in Sources */,
 				5F4B42B9225BAAA5000552E0 /* PaymentViewController.swift in Sources */,
 				5FE08DAC22590B6C003B5414 /* RootRouter.swift in Sources */,
+				5F4B42E8225CDD05000552E0 /* String+Extension.swift in Sources */,
 				5F4B42B4225B9F6F000552E0 /* MaskViewOverlay.swift in Sources */,
+				5F4B42D7225C9AB1000552E0 /* DataBinding.swift in Sources */,
 				5FE08DA7225908D2003B5414 /* AppConstants.swift in Sources */,
 				5FE08DC0225A3C51003B5414 /* CustomInputTextView.swift in Sources */,
 				5F4B42C4225C46ED000552E0 /* CoreParameter.swift in Sources */,
 				5F4B42C3225C46ED000552E0 /* EmptyResponse.swift in Sources */,
 				5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */,
+				5F4B42DE225CAD09000552E0 /* Spinner.swift in Sources */,
 				5FE08D802259026B003B5414 /* LoginViewController.swift in Sources */,
 				5FE08DA922590917003B5414 /* UIColor+Extension.swift in Sources */,
 				5F4B42C5225C46ED000552E0 /* ServiceRequest.swift in Sources */,
@@ -960,6 +1006,7 @@
 				5FE08DD5225AD20C003B5414 /* ProfileItemCell.swift in Sources */,
 				5FE08DB722591102003B5414 /* LoginViewModel.swift in Sources */,
 				5FE08DC5225A52F2003B5414 /* SignUpViewModel.swift in Sources */,
+				5F4B42D2225C9784000552E0 /* EmailViewModel.swift in Sources */,
 				5FE08D8E225903C7003B5414 /* WalletViewController.swift in Sources */,
 				5FE08DCC225A64BE003B5414 /* TransactionHistoryCell.swift in Sources */,
 				5FE994E7225C5952004726B0 /* SignUpParams.swift in Sources */,
@@ -971,7 +1018,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4B42D9225CAA06000552E0 /* ValidateEmailTests.swift in Sources */,
 				5FB144082256186200218AAE /* QRCodeTests.swift in Sources */,
+				5F4B42DB225CAAC5000552E0 /* ValidatePasswordTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -999,10 +1048,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5F4B42E5225CDCB5000552E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F4B42E4225CDCB5000552E0 /* en */,
+				5F4B42E6225CDCB7000552E0 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		5FB143FB2256186200218AAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5FB143FC2256186200218AAE /* Base */,
+				5F4B42E1225CDCA3000552E0 /* ja */,
+				5F4B42E2225CDCAB000552E0 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1014,6 +1074,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1075,6 +1136,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

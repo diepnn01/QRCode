@@ -35,4 +35,9 @@ import UIKit
         }
     }
     
+    @IBInspectable var entrySecure: Bool = false {
+        didSet {
+            textField.isSecureTextEntry = entrySecure
+        }
+    }
 }

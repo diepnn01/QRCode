@@ -9,6 +9,7 @@
 import Foundation
 
 struct LoginParams: CoreParameter {
+    
     var email: String
     var password: String
     

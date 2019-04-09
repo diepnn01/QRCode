@@ -16,26 +16,35 @@ final class LoginViewController: BaseViewController {
     }
     
     //MARK:- Outlets
-    @IBOutlet weak var emailInputText: CustomInputTextView!
-    @IBOutlet weak var passwordInputText: CustomInputTextView!
+    @IBOutlet private weak var emailInputText: CustomInputTextView!
+    @IBOutlet private weak var passwordInputText: CustomInputTextView!
     
+    //MARK:- Public properties
+    private let viewModel = LoginViewModel()
     
     //MARK:- Public methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSubcribers()
+    }
+    
+    //MARK:- Private methods
+    private func setupSubcribers() {
+        viewModel.errorMessage.bind(hdl: { [weak self](errorMsg) in
+            self?.showMessage(content: errorMsg)
+        })
+        
+        viewModel.loginCompleted.bind(hdl: { [weak self](isSuccess) in
+            guard isSuccess else {
+                return
+            }
+            self?.performSegue(withIdentifier: SegueIndenfier.tabbar, sender: nil)
+        })
     }
     
     //MARK:- Actions
     @IBAction private func actionLogin(_ sender: UIButton) {
-        performSegue(withIdentifier: SegueIndenfier.tabbar, sender: nil)
+        view.endEditing(true)
+        viewModel.login(email: emailInputText.text, password: passwordInputText.text)
     }
-    
-    @IBAction private func actionSignup(_ sender: UIButton) {
-        
-    }
-    
-    @IBAction private func actionForgotPassword(_ sender: UIButton) {
-    }
-    
-    
 }

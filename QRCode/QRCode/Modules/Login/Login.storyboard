@@ -114,6 +114,7 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="entrySecure" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAh-A6-M9y">
@@ -122,9 +123,6 @@
                                                 <state key="normal" title="I forgot password">
                                                     <color key="titleColor" red="0.99607843137254903" green="0.75294117647058822" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="actionForgotPassword:" destination="8ad-ci-9vm" eventType="touchUpInside" id="7b3-Vl-DAn"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOm-M0-KUa">
                                                 <rect key="frame" x="36" y="590" width="342" height="50"/>
@@ -160,10 +158,6 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="actionSignup:" destination="8ad-ci-9vm" eventType="touchUpInside" id="id1-ar-u01"/>
-                                                    <segue destination="edb-ps-bVf" kind="show" identifier="show sign up" id="HfZ-Q3-ZKj"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

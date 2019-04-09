@@ -10,9 +10,12 @@ import XCTest
 @testable import QRCode
 
 class QRCodeTests: XCTestCase {
-
+    
+    let viewModel = LoginViewModel()
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewModel.passwordViewModel.data.value = "aAsasasasasa1"
+        viewModel.emailViewModel.data.value = "diepnn@gmail.com"
     }
 
     override func tearDown() {
@@ -22,6 +25,14 @@ class QRCodeTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testValidatePassword() {
+//        XCTAssert(viewModel.validateCredentials())
+    }
+    
+    func testValidateEmail() {
+//        XCTAssert(viewModel.validateCredentials(), "invalid email")
     }
 
     func testPerformanceExample() {

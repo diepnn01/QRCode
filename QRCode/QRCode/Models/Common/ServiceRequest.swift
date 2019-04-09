@@ -106,16 +106,16 @@ final class ServiceRequest<T: CoreResponse> {
         
         
         guard let error = error else {
-            cloudErrorClosure?("Error from server", response.response?.statusCode)
+            cloudErrorClosure?("Error from server", 500)
             return
         }
         
         switch error._code {
         case NSURLErrorTimedOut:
-            cloudErrorClosure?("Gagal menghubungi server, silakan coba lagi.", 408)
+            cloudErrorClosure?("Request timeout.", 408)
             
         default:
-            cloudErrorClosure?("Error from server", response.response?.statusCode)
+            cloudErrorClosure?("Error from server", 500)
         }
     }
 }
