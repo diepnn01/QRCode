@@ -40,6 +40,7 @@
 		5F4B42ED225CF0F4000552E0 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42EC225CF0F4000552E0 /* ProfileDetailViewController.swift */; };
 		5F4B42F2225CF47C000552E0 /* ProfileDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F1225CF47C000552E0 /* ProfileDetailTableViewCell.swift */; };
 		5F4B42F4225CF54A000552E0 /* ProfileDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F3225CF54A000552E0 /* ProfileDetailItem.swift */; };
+		5F4B42F6225CFA7A000552E0 /* ProfileDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F5225CFA7A000552E0 /* ProfileDetailViewModel.swift */; };
 		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
@@ -141,6 +142,7 @@
 		5F4B42EC225CF0F4000552E0 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 		5F4B42F1225CF47C000552E0 /* ProfileDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailTableViewCell.swift; sourceTree = "<group>"; };
 		5F4B42F3225CF54A000552E0 /* ProfileDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailItem.swift; sourceTree = "<group>"; };
+		5F4B42F5225CFA7A000552E0 /* ProfileDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewModel.swift; sourceTree = "<group>"; };
 		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		5F4B42EF225CF45A000552E0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B42F5225CFA7A000552E0 /* ProfileDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -331,6 +334,16 @@
 			children = (
 				5F4B42EE225CF44C000552E0 /* Cell */,
 				5F4B42EC225CF0F4000552E0 /* ProfileDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F4B42F7225CFD53000552E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42B2225B9A48000552E0 /* MaskView */,
+				5F4B42B1225B9A3E000552E0 /* Scanner */,
+				5FE08D8B225903B5003B5414 /* ScanViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -538,8 +551,7 @@
 			isa = PBXGroup;
 			children = (
 				5F4B42B7225BAA27000552E0 /* Payment */,
-				5FE08DD6225AD3AA003B5414 /* ViewModel */,
-				5FE08DD7225AD3B7003B5414 /* View */,
+				5FE08DD7225AD3B7003B5414 /* Scan */,
 				5FE08D9922590510003B5414 /* Scan.storyboard */,
 			);
 			path = Scan;
@@ -700,14 +712,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		5FE08DD7225AD3B7003B5414 /* View */ = {
+		5FE08DD7225AD3B7003B5414 /* Scan */ = {
 			isa = PBXGroup;
 			children = (
-				5F4B42B2225B9A48000552E0 /* MaskView */,
-				5F4B42B1225B9A3E000552E0 /* Scanner */,
-				5FE08D8B225903B5003B5414 /* ScanViewController.swift */,
+				5FE08DD6225AD3AA003B5414 /* ViewModel */,
+				5F4B42F7225CFD53000552E0 /* View */,
 			);
-			path = View;
+			path = Scan;
 			sourceTree = "<group>";
 		};
 		5FE994E8225C5B47004726B0 /* Profile */ = {
@@ -894,6 +905,7 @@
 				"${BUILT_PRODUCTS_DIR}/KSCrash/KSCrash.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KumulosSdkSwift/KumulosSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/netfox/netfox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -904,6 +916,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KumulosSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/netfox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1015,6 +1028,7 @@
 				5FE08D832259027E003B5414 /* BaseViewController.swift in Sources */,
 				5F4B42D4225C97B0000552E0 /* ValidationViewModel.swift in Sources */,
 				5FE08D882259038B003B5414 /* TabbarViewController.swift in Sources */,
+				5F4B42F6225CFA7A000552E0 /* ProfileDetailViewModel.swift in Sources */,
 				5FE08DB422590ED8003B5414 /* NSObject.swift in Sources */,
 				5FE994EA225C5B6A004726B0 /* ProfileItem.swift in Sources */,
 				5FE08DC8225A5733003B5414 /* WalletViewModel.swift in Sources */,

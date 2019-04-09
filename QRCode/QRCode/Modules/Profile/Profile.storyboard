@@ -185,6 +185,7 @@
                         <outlet property="labelFullName" destination="rD4-qe-5Pp" id="OK8-2B-kFf"/>
                         <outlet property="labelPhone" destination="cyh-l7-2LJ" id="Ivd-PM-TKH"/>
                         <outlet property="tableView" destination="3Ac-ex-SsT" id="cR1-us-7Nn"/>
+                        <segue destination="2XX-Ox-EFI" kind="show" identifier="show profile detail" id="zZ0-q6-wHe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYb-0v-2Z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -194,7 +195,7 @@
         <!--Profile Detail View Controller-->
         <scene sceneID="uB2-Fr-9sc">
             <objects>
-                <viewController id="2XX-Ox-EFI" customClass="ProfileDetailViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileDetailViewController" id="2XX-Ox-EFI" customClass="ProfileDetailViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XXJ-mn-4fW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,6 +216,9 @@
                                             <constraint firstAttribute="width" constant="30" id="kKo-0t-WfV"/>
                                         </constraints>
                                         <state key="normal" image="icon_back"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="2XX-Ox-EFI" eventType="touchUpInside" id="vb4-gE-q5W"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -269,13 +273,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6A-C9-JxW">
-                                <rect key="frame" x="0.0" y="292.5" width="414" height="569.5"/>
+                                <rect key="frame" x="0.0" y="292.5" width="414" height="603.5"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TQo-D9-buZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="569.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="603.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProfileItemCell" rowHeight="50" id="AMQ-EE-l0G" customClass="ProfileDetailTableViewCell" customModule="QRCode" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="profile detail cell" rowHeight="50" id="AMQ-EE-l0G" customClass="ProfileDetailTableViewCell" customModule="QRCode" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AMQ-EE-l0G" id="h75-yt-h6d">
@@ -335,7 +339,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="srr-kG-EgA" firstAttribute="bottom" secondItem="w6A-C9-JxW" secondAttribute="bottom" id="6Qw-Ne-39w"/>
+                            <constraint firstAttribute="bottom" secondItem="w6A-C9-JxW" secondAttribute="bottom" id="6Qw-Ne-39w"/>
                             <constraint firstItem="HY9-Z9-Nwa" firstAttribute="top" secondItem="MbM-pZ-1E3" secondAttribute="bottom" constant="25" id="95c-py-fXt"/>
                             <constraint firstItem="srr-kG-EgA" firstAttribute="trailing" secondItem="w6A-C9-JxW" secondAttribute="trailing" id="AVV-9d-cgE"/>
                             <constraint firstItem="w6A-C9-JxW" firstAttribute="top" secondItem="HY9-Z9-Nwa" secondAttribute="bottom" constant="50" id="Aht-ak-Cw0"/>
@@ -349,6 +353,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="TQo-D9-buZ" id="7Aq-wv-biH"/>
+                        <outlet property="viewContainer" destination="w6A-C9-JxW" id="kiL-5K-dAx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ham-s7-UMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,7 +363,7 @@
     </scenes>
     <resources>
         <image name="dummy_avatar" width="98" height="97"/>
-        <image name="icon-logo" width="122" height="18"/>
+        <image name="icon-logo" width="244" height="36"/>
         <image name="icon_arrow_right" width="7" height="12"/>
         <image name="icon_back" width="14" height="22"/>
         <image name="icon_notification" width="40" height="40"/>

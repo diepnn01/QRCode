@@ -17,10 +17,10 @@ final class ProfileViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var containerView: UIView!
     
-    
+    //MARK:- Private properties
     private let viewModel = ProfileViewModel()
     
-    //MARK: Public methods
+    //MARK:- Public methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -29,7 +29,20 @@ final class ProfileViewController: BaseViewController {
         super.viewDidAppear(animated)
         containerView.roundCorners(corners: [.topRight, .topLeft], radius: 20)
     }
-}
+    
+    //MARK:- Private methods
+    private func showProfileDetail() {
+        guard let destinationVC = UIStoryboard.loadViewControler("Profile", nameController: ProfileDetailViewController.className) as? ProfileDetailViewController else {
+            return
+        }
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        appDelegate.router.rootViewController?.pushViewController(destinationVC, animated: true)
+    }
+} 
 
 //MARK:- UITableViewDataSource
 extension ProfileViewController: UITableViewDataSource {
@@ -57,5 +70,14 @@ extension ProfileViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 1:
+            showProfileDetail()
+        default:
+            break
+        }
     }
 }

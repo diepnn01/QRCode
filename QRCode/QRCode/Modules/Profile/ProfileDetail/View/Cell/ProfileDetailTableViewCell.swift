@@ -13,6 +13,8 @@ final class ProfileDetailTableViewCell: UITableViewCell {
     @IBOutlet private weak var labelTitle: UILabel!
     @IBOutlet private weak var labelContent: UILabel!
     
+    static let identitfier = "profile detail cell"
+    
     var item: ProfileDetailItem? {
         didSet {
             guard let model = item else {

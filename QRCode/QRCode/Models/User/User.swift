@@ -13,7 +13,7 @@ class User: CoreResponse, CoreParameter {
     var email: String?
     var firstName: String?
     var lastName: String?
-    var userID: String?
+    var userID: Int?
     var avatarUrl: String?
     var phoneNumber: String?
     
@@ -26,7 +26,7 @@ class User: CoreResponse, CoreParameter {
         email = object["email"] as? String
         firstName = object["firstName"] as? String
         lastName = object["lastName"] as? String
-        userID = object["id"] as? String
+        userID = object["userID"] as? Int
         avatarUrl = object["avatarUrl"] as? String
         phoneNumber = object["phoneNumber"] as? String
     }
@@ -62,7 +62,7 @@ class User: CoreResponse, CoreParameter {
     }
     
     func fromDictionary(_ dict: [String: AnyObject]) -> User {
-        self.userID = dict["ID"] as? String
+        self.userID = dict["userID"] as? Int
         self.firstName = dict["firstName"] as? String
         self.phoneNumber = dict["phoneNumber"] as? String
         self.lastName = dict["lastName"] as? String

@@ -68,11 +68,13 @@ PODS:
   - KumulosSdkSwift (4.0.0):
     - Alamofire (~> 4.8.1)
     - KSCrash (~> 1.15.18)
+  - netfox (1.15.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
   - KeychainSwift (~> 14.0)
   - KumulosSdkSwift (~> 4.0)
+  - netfox
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -81,6 +83,7 @@ SPEC REPOS:
     - KeychainSwift
     - KSCrash
     - KumulosSdkSwift
+    - netfox
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -88,7 +91,8 @@ SPEC CHECKSUMS:
   KeychainSwift: d3cce449feb5198907aa3c50ae7409fdbd9d3e20
   KSCrash: 49855f7867f7d456905c241640a203f53588497d
   KumulosSdkSwift: c49e5dbedba7851363d58d28dd11b28d3d0352b4
+  netfox: 6ddcca687ad0a58550054fea481cb487461b5e0c
 
-PODFILE CHECKSUM: af0dbf6bb75f82e5f1e874a086582cb09950f53b
+PODFILE CHECKSUM: 1c7845a49c54eeb166435d7f33a957cda20eb68b
 
 COCOAPODS: 1.6.0
