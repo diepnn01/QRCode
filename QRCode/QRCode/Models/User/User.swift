@@ -17,11 +17,16 @@ struct User: CoreResponse, CoreParameter {
     var avatarUrl: String?
     
     init(data: [String : Any]?) {
-        email = data?["email"] as? String
-        firstName = data?["firstName"] as? String
-        lastName = data?["lastName"] as? String
-        userID = data?["id"] as? String
-        avatarUrl = data?["avatarUrl"] as? String
+        
+        guard let items = data?["items"] as? [[String: Any]], let object = items.first else {
+            return
+        }
+        
+        email = object["email"] as? String
+        firstName = object["firstName"] as? String
+        lastName = object["lastName"] as? String
+        userID = object["id"] as? String
+        avatarUrl = object["avatarUrl"] as? String
     }
     
     func toDictionary() -> [String : AnyObject] {

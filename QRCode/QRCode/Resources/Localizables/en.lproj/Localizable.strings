@@ -8,7 +8,10 @@
 
 //Common
 "common.ok" = "OK";
-
+"common.error" = "Error";
 //Login
 "message.invalid.password" = "Please enter a valid password";
 "message.invalid.email" = "Please enter a valid email id";
+
+//SignUp
+"message.firstName.LastName.required" = "First name and Last name are required";

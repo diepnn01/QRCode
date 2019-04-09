@@ -31,6 +31,9 @@ final class LoginViewController: BaseViewController {
     //MARK:- Private methods
     private func setupSubcribers() {
         viewModel.errorMessage.bind(hdl: { [weak self](errorMsg) in
+            guard !errorMsg.isEmpty else {
+                return
+            }
             self?.showMessage(content: errorMsg)
         })
         

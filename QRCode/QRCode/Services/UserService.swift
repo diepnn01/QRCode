@@ -23,7 +23,7 @@ final class UserService {
     func signUp(params: SignUpParams) -> ServiceRequest<User> {
         let request = ServiceRequest<User>()
         Kumulos.call(MethodName.signUp, parameters: params.toDictionary()).success { (response, _) in
-            request.handleResponseJSON(response: response)
+            request.handleResponseJSONArray(response: response)
             }.failure { (error: Error?, _) in
                 request.handleError(error: error)
         }
@@ -36,7 +36,7 @@ final class UserService {
     func login(params: LoginParams) -> ServiceRequest<User> {
         let request = ServiceRequest<User>()
         Kumulos.call(MethodName.login, parameters: params.toDictionary()).success { (response, _) in
-            request.handleResponseJSON(response: response)
+            request.handleResponseJSONArray(response: response)
             }.failure { (err, _) in
                 request.handleError(error: err)
         }
@@ -49,7 +49,7 @@ final class UserService {
     func updateProfile(params: User) -> ServiceRequest<User> {
         let request = ServiceRequest<User>()
         Kumulos.call(MethodName.updateProfile, parameters: params.toDictionary()).success { (response, _) in
-            request.handleResponseJSON(response: response)
+            request.handleResponseJSONArray(response: response)
             }.failure { (error: Error?, _) in
                 request.handleError(error: error)
         }

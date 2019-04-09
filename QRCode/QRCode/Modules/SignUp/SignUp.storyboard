@@ -85,6 +85,7 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="entrySecure" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password must be at least 8 characters.  Must include: (1 uppercase, 1 digit, 1 lowercase)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqH-XM-0t2">
@@ -296,6 +297,7 @@ Cg
                         <viewLayoutGuide key="safeArea" id="kZO-qR-xH6"/>
                     </view>
                     <connections>
+                        <outlet property="buttonSignUp" destination="AEn-4u-0WI" id="B4i-w7-9sg"/>
                         <outlet property="inputTextEmail" destination="d3d-40-8IZ" id="Do4-WO-E4w"/>
                         <outlet property="inputTextFirstName" destination="3wP-Wq-2B2" id="2oJ-d5-CJr"/>
                         <outlet property="inputTextLastName" destination="uI5-Hw-tou" id="j5N-Iu-SZ0"/>
