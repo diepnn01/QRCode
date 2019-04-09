@@ -101,4 +101,21 @@ final class ServiceRequest<T: CoreResponse> {
              cloudErrorClosure?(response.responseMessage ?? "", Int(statusCode))
         }
     }
+    
+    func handleError(error: Error?) {
+        
+        
+        guard let error = error else {
+            cloudErrorClosure?("Error from server", response.response?.statusCode)
+            return
+        }
+        
+        switch error._code {
+        case NSURLErrorTimedOut:
+            cloudErrorClosure?("Gagal menghubungi server, silakan coba lagi.", 408)
+            
+        default:
+            cloudErrorClosure?("Error from server", response.response?.statusCode)
+        }
+    }
 }

@@ -17,10 +17,42 @@ final class UserService {
         static let updateProfile = "updateProfile"
     }
     
-    func signUp() -> ServiceRequest<EmptyResponse> {
-        
-        let request = ServiceRequest<EmptyResponse>()
-//        Kumulos.call(MethodName.signUp, parameters: <#T##Dictionary<String, AnyObject>#>)
+    /* Input: Signup parameters email and password
+     * Response: User object
+     */
+    func signUp(params: SignUpParams) -> ServiceRequest<User> {
+        let request = ServiceRequest<User>()
+        Kumulos.call(MethodName.signUp, parameters: params.toDictionary()).success { (response, _) in
+            request.handleResponseJSON(response: response)
+            }.failure { (error: Error?, _) in
+                request.handleError(error: error)
+        }
+        return request
+    }
+    
+    /* Input: Login parameters email & password & firstName & lastName
+     * Response: User object
+     */
+    func login(params: LoginParams) -> ServiceRequest<User> {
+        let request = ServiceRequest<User>()
+        Kumulos.call(MethodName.login, parameters: params.toDictionary()).success { (response, _) in
+            request.handleResponseJSON(response: response)
+            }.failure { (err, _) in
+                request.handleError(error: err)
+        }
+        return request
+    }
+    
+    /* Input: User Information
+     * Response: User object
+     */
+    func updateProfile(params: User) -> ServiceRequest<User> {
+        let request = ServiceRequest<User>()
+        Kumulos.call(MethodName.updateProfile, parameters: params.toDictionary()).success { (response, _) in
+            request.handleResponseJSON(response: response)
+            }.failure { (error: Error?, _) in
+                request.handleError(error: error)
+        }
         return request
     }
 }
