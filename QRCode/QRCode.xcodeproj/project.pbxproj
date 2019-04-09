@@ -20,6 +20,13 @@
 		5F4B42B6225B9FB7000552E0 /* MaskViewOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42B5225B9FB7000552E0 /* MaskViewOverlay.xib */; };
 		5F4B42B9225BAAA5000552E0 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42B8225BAAA5000552E0 /* PaymentViewController.swift */; };
 		5F4B42BD225BBDFE000552E0 /* PaymentPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42BC225BBDFE000552E0 /* PaymentPopupViewController.swift */; };
+		5F4B42C3225C46ED000552E0 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42BF225C46ED000552E0 /* EmptyResponse.swift */; };
+		5F4B42C4225C46ED000552E0 /* CoreParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42C0225C46ED000552E0 /* CoreParameter.swift */; };
+		5F4B42C5225C46ED000552E0 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42C1225C46ED000552E0 /* ServiceRequest.swift */; };
+		5F4B42C6225C46ED000552E0 /* CoreReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42C2225C46ED000552E0 /* CoreReponse.swift */; };
+		5F4B42C8225C4722000552E0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42C7225C4722000552E0 /* UserService.swift */; };
+		5F4B42CB225C51F2000552E0 /* LoginParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42CA225C51F2000552E0 /* LoginParams.swift */; };
+		5F4B42CD225C5392000552E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42CC225C5392000552E0 /* User.swift */; };
 		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
@@ -60,6 +67,8 @@
 		5FE08DCE225A665D003B5414 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DCD225A665D003B5414 /* UITableView+Extension.swift */; };
 		5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DD0225AC784003B5414 /* ProfileViewModel.swift */; };
 		5FE08DD5225AD20C003B5414 /* ProfileItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE08DD4225AD20C003B5414 /* ProfileItemCell.swift */; };
+		5FE994E7225C5952004726B0 /* SignUpParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE994E6225C5952004726B0 /* SignUpParams.swift */; };
+		5FE994EA225C5B6A004726B0 /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE994E9225C5B6A004726B0 /* ProfileItem.swift */; };
 		BA33D453EDF3FA97413959DB /* Pods_QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359CC9B4B54295B4CF0C9A9F /* Pods_QRCode.framework */; };
 		E9B4D1D775FEA68D270D6D08 /* Pods_QRCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9799DCAF171450C2D84647 /* Pods_QRCodeTests.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +105,13 @@
 		5F4B42B5225B9FB7000552E0 /* MaskViewOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaskViewOverlay.xib; sourceTree = "<group>"; };
 		5F4B42B8225BAAA5000552E0 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		5F4B42BC225BBDFE000552E0 /* PaymentPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPopupViewController.swift; sourceTree = "<group>"; };
+		5F4B42BF225C46ED000552E0 /* EmptyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		5F4B42C0225C46ED000552E0 /* CoreParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreParameter.swift; sourceTree = "<group>"; };
+		5F4B42C1225C46ED000552E0 /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		5F4B42C2225C46ED000552E0 /* CoreReponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreReponse.swift; sourceTree = "<group>"; };
+		5F4B42C7225C4722000552E0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		5F4B42CA225C51F2000552E0 /* LoginParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParams.swift; sourceTree = "<group>"; };
+		5F4B42CC225C5392000552E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +158,8 @@
 		5FE08DCD225A665D003B5414 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		5FE08DD0225AC784003B5414 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		5FE08DD4225AD20C003B5414 /* ProfileItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItemCell.swift; sourceTree = "<group>"; };
+		5FE994E6225C5952004726B0 /* SignUpParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpParams.swift; sourceTree = "<group>"; };
+		5FE994E9225C5B6A004726B0 /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		791DD3286A76F0A371A688B2 /* Pods-QRCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeTests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeTests/Pods-QRCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		845F9EFE2BDF2ED115B4A43D /* Pods-QRCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C0987E81357272C0EDD28CF /* Pods-QRCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeUITests.release.xcconfig"; path = "Target Support Files/Pods-QRCodeUITests/Pods-QRCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +242,27 @@
 				5F4B42BC225BBDFE000552E0 /* PaymentPopupViewController.swift */,
 			);
 			path = PaymentPopup;
+			sourceTree = "<group>";
+		};
+		5F4B42BE225C46ED000552E0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42BF225C46ED000552E0 /* EmptyResponse.swift */,
+				5F4B42C0225C46ED000552E0 /* CoreParameter.swift */,
+				5F4B42C1225C46ED000552E0 /* ServiceRequest.swift */,
+				5F4B42C2225C46ED000552E0 /* CoreReponse.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5F4B42C9225C4846000552E0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42CA225C51F2000552E0 /* LoginParams.swift */,
+				5F4B42CC225C5392000552E0 /* User.swift */,
+				5FE994E6225C5952004726B0 /* SignUpParams.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		5FB143E32256186100218AAE = {
@@ -317,6 +356,9 @@
 		5FE08D7222590049003B5414 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5FE994E8225C5B47004726B0 /* Profile */,
+				5F4B42C9225C4846000552E0 /* User */,
+				5F4B42BE225C46ED000552E0 /* Common */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -450,6 +492,7 @@
 		5FE08DA02259066A003B5414 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B42C7225C4722000552E0 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -586,6 +629,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5FE994E8225C5B47004726B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5FE994E9225C5B6A004726B0 /* ProfileItem.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		6FF9CBFE97CE909713E997BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -626,6 +677,7 @@
 				5FB143FF2256186200218AAE /* Sources */,
 				5FB144002256186200218AAE /* Frameworks */,
 				5FB144012256186200218AAE /* Resources */,
+				873248AE2D09B793187B194C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -752,13 +804,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QRCode/Pods-QRCode-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KSCrash/KSCrash.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KumulosSdkSwift/KumulosSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KumulosSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -809,6 +869,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		873248AE2D09B793187B194C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRCodeTests/Pods-QRCodeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KSCrash/KSCrash.framework",
+				"${BUILT_PRODUCTS_DIR}/KumulosSdkSwift/KumulosSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KumulosSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRCodeTests/Pods-QRCodeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F563CFCF6D6125E321C09441 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -842,6 +928,7 @@
 				5FE08D832259027E003B5414 /* BaseViewController.swift in Sources */,
 				5FE08D882259038B003B5414 /* TabbarViewController.swift in Sources */,
 				5FE08DB422590ED8003B5414 /* NSObject.swift in Sources */,
+				5FE994EA225C5B6A004726B0 /* ProfileItem.swift in Sources */,
 				5FE08DC8225A5733003B5414 /* WalletViewModel.swift in Sources */,
 				5FE08DAE22590BC1003B5414 /* DeepLinkHandler.swift in Sources */,
 				5FE08D96225904D8003B5414 /* TabbarItem.swift in Sources */,
@@ -850,12 +937,18 @@
 				5F4B42B4225B9F6F000552E0 /* MaskViewOverlay.swift in Sources */,
 				5FE08DA7225908D2003B5414 /* AppConstants.swift in Sources */,
 				5FE08DC0225A3C51003B5414 /* CustomInputTextView.swift in Sources */,
+				5F4B42C4225C46ED000552E0 /* CoreParameter.swift in Sources */,
+				5F4B42C3225C46ED000552E0 /* EmptyResponse.swift in Sources */,
 				5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */,
 				5FE08D802259026B003B5414 /* LoginViewController.swift in Sources */,
 				5FE08DA922590917003B5414 /* UIColor+Extension.swift in Sources */,
+				5F4B42C5225C46ED000552E0 /* ServiceRequest.swift in Sources */,
+				5F4B42CD225C5392000552E0 /* User.swift in Sources */,
 				5FE08DB222590E13003B5414 /* UIStoryboard+Extension.swift in Sources */,
 				5FE08DA422590872003B5414 /* UIView+Extension.swift in Sources */,
+				5F4B42C8225C4722000552E0 /* UserService.swift in Sources */,
 				5F4B42BD225BBDFE000552E0 /* PaymentPopupViewController.swift in Sources */,
+				5F4B42CB225C51F2000552E0 /* LoginParams.swift in Sources */,
 				5FE08DBA225A3583003B5414 /* BaseCustomView.swift in Sources */,
 				5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */,
 				5FE08D8A225903A6003B5414 /* ProfileViewController.swift in Sources */,
@@ -869,6 +962,8 @@
 				5FE08DC5225A52F2003B5414 /* SignUpViewModel.swift in Sources */,
 				5FE08D8E225903C7003B5414 /* WalletViewController.swift in Sources */,
 				5FE08DCC225A64BE003B5414 /* TransactionHistoryCell.swift in Sources */,
+				5FE994E7225C5952004726B0 /* SignUpParams.swift in Sources */,
+				5F4B42C6225C46ED000552E0 /* CoreReponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

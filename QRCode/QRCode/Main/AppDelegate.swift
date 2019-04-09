@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
+import KumulosSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Keyboard manager
         IQKeyboardManager.shared.enable = true
+        
+        // Kumulos
+        let builder = KSConfigBuilder(apiKey: AppConstant.kumulosAPIKey, secretKey: AppConstant.kumulosSecretKey)
+        Kumulos.initialize(config: builder.build())
+        
         return true
     }
 

@@ -18,6 +18,8 @@ final class ProfileViewController: BaseViewController {
     @IBOutlet weak var containerView: UIView!
     
     
+    private let viewModel = ProfileViewModel()
+    
     //MARK: Public methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,7 @@ final class ProfileViewController: BaseViewController {
 extension ProfileViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel.numberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +42,11 @@ extension ProfileViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        guard let item = viewModel.item(atIndex: indexPath.row) else {
+            return cell
+        }
+        
+        cell.model = item
         return cell
     }
 }

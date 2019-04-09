@@ -6,10 +6,12 @@ target 'QRCode' do
   use_frameworks!
 
   pod 'IQKeyboardManagerSwift'
-
+  pod 'KumulosSdkSwift', '~> 4.0'
+  pod 'KeychainSwift', '~> 14.0'
+  
   target 'QRCodeTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'KumulosSdkSwift', '~> 4.0'
   end
 
   target 'QRCodeUITests' do
