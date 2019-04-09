@@ -31,6 +31,7 @@ final class ProfileViewController: BaseViewController {
     }
 }
 
+//MARK:- UITableViewDataSource
 extension ProfileViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,6 +52,7 @@ extension ProfileViewController: UITableViewDataSource {
     }
 }
 
+//MARK:- UITableViewDelegate
 extension ProfileViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

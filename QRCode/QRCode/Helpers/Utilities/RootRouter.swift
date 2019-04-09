@@ -40,7 +40,7 @@ final class RootRouter {
     
     func loadMainAppStructure() {
         
-        if !SessionManager.shared.isLogin {
+        if SessionManager.shared.user == nil {
             guard let loginController = UIStoryboard.loadViewControler(MainRouteStoryboard.Login, nameController: LoginViewController.className) as? LoginViewController else {
                 return
             }

@@ -30,10 +30,11 @@ final class ProfileViewModel {
     
     //MARK:- Private methods
     private func prepareData() {
-        listItems.append(ProfileItem(iconName: "icon_notification", title: "Notifications"))
-        listItems.append(ProfileItem(iconName: "icon_user_data_outlined", title: "Personal Information"))
-        listItems.append(ProfileItem(iconName: "icon_shield_outlined", title: "Security Settings"))
-        listItems.append(ProfileItem(iconName: "icon_help_outlined", title: "Help & Support"))
-        listItems.append(ProfileItem(iconName: "icon_legal_docs_outlined", title: "Term of Use"))
+    
+        listItems.append(ProfileItem(iconName: "icon_notification", title: "profile.notifications".localize()))
+        listItems.append(ProfileItem(iconName: "icon_user_data_outlined", title: "profile.personal.information".localize()))
+        listItems.append(ProfileItem(iconName: "icon_shield_outlined", title: "profile.security.settings".localize()))
+        listItems.append(ProfileItem(iconName: "icon_help_outlined", title: "profile.help.support".localize()))
+        listItems.append(ProfileItem(iconName: "icon_legal_docs_outlined", title: "profile.team.of.use".localize()))
     }
 }

@@ -15,3 +15,10 @@
 
 //SignUp
 "message.firstName.LastName.required" = "First name and Last name are required";
+
+//Profile
+"profile.notifications" = "Notifications";
+"profile.personal.information" = "Personal Information";
+"profile.security.settings" = "Security Settings";
+"profile.help.support" = "Help & Support";
+"profile.team.of.use" = "Term of Use";

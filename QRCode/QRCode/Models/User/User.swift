@@ -8,15 +8,16 @@
 
 import Foundation
 
-struct User: CoreResponse, CoreParameter {
+class User: CoreResponse, CoreParameter {
     
     var email: String?
     var firstName: String?
     var lastName: String?
     var userID: String?
     var avatarUrl: String?
+    var phoneNumber: String?
     
-    init(data: [String : Any]?) {
+    required init(data: [String : Any]?) {
         
         guard let items = data?["items"] as? [[String: Any]], let object = items.first else {
             return
@@ -27,6 +28,7 @@ struct User: CoreResponse, CoreParameter {
         lastName = object["lastName"] as? String
         userID = object["id"] as? String
         avatarUrl = object["avatarUrl"] as? String
+        phoneNumber = object["phoneNumber"] as? String
     }
     
     func toDictionary() -> [String : AnyObject] {
@@ -52,6 +54,54 @@ struct User: CoreResponse, CoreParameter {
             params["userID"] = userId
         }
         
+        if let phone = phoneNumber {
+            params["phoneNumber"] = phone
+        }
+        
         return params as [String : AnyObject]
+    }
+    
+    func fromDictionary(_ dict: [String: AnyObject]) -> User {
+        self.userID = dict["ID"] as? String
+        self.firstName = dict["firstName"] as? String
+        self.phoneNumber = dict["phoneNumber"] as? String
+        self.lastName = dict["lastName"] as? String
+        self.avatarUrl = dict["avatarUrl"] as? String
+        self.email = dict["email"] as? String
+        
+        return self
+    }
+    
+    public func toJsonString() -> String? {
+        let dict = toDictionary()
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
+            if let string = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue) {
+                return string as String
+            }
+            return nil
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        return nil
+    }
+    
+    public func fromJsonString(_ jsonString: String) {
+        
+        var dict: [String: AnyObject]?
+        
+        if jsonString != "" {
+            if let data = jsonString.data(using: String.Encoding.utf8) {
+                do {
+                    dict = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions()) as? [String: AnyObject]
+                } catch {
+                    dict = nil
+                }
+            }
+            if let myDict = dict {
+                _ = fromDictionary(myDict)
+            }
+        }
     }
 }

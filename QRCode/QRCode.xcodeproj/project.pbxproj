@@ -37,6 +37,9 @@
 		5F4B42E3225CDCB5000552E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F4B42E5225CDCB5000552E0 /* Localizable.strings */; };
 		5F4B42E8225CDD05000552E0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42E7225CDD05000552E0 /* String+Extension.swift */; };
 		5F4B42EA225CE373000552E0 /* UserNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42E9225CE373000552E0 /* UserNameViewModel.swift */; };
+		5F4B42ED225CF0F4000552E0 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42EC225CF0F4000552E0 /* ProfileDetailViewController.swift */; };
+		5F4B42F2225CF47C000552E0 /* ProfileDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F1225CF47C000552E0 /* ProfileDetailTableViewCell.swift */; };
+		5F4B42F4225CF54A000552E0 /* ProfileDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F3225CF54A000552E0 /* ProfileDetailItem.swift */; };
 		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
@@ -135,6 +138,9 @@
 		5F4B42E6225CDCB7000552E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F4B42E7225CDD05000552E0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5F4B42E9225CE373000552E0 /* UserNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameViewModel.swift; sourceTree = "<group>"; };
+		5F4B42EC225CF0F4000552E0 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
+		5F4B42F1225CF47C000552E0 /* ProfileDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailTableViewCell.swift; sourceTree = "<group>"; };
+		5F4B42F3225CF54A000552E0 /* ProfileDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailItem.swift; sourceTree = "<group>"; };
 		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -294,6 +300,39 @@
 				5F4B42DD225CAD09000552E0 /* Spinner.swift */,
 			);
 			path = Spinner;
+			sourceTree = "<group>";
+		};
+		5F4B42EB225CF0D8000552E0 /* ProfileDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42EF225CF45A000552E0 /* ViewModel */,
+				5F4B42F0225CF461000552E0 /* View */,
+			);
+			path = ProfileDetail;
+			sourceTree = "<group>";
+		};
+		5F4B42EE225CF44C000552E0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42F1225CF47C000552E0 /* ProfileDetailTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5F4B42EF225CF45A000552E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5F4B42F0225CF461000552E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B42EE225CF44C000552E0 /* Cell */,
+				5F4B42EC225CF0F4000552E0 /* ProfileDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5FB143E32256186100218AAE = {
@@ -509,8 +548,9 @@
 		5FE08D7E22590237003B5414 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				5FE08DCF225AC74D003B5414 /* ViewModel */,
-				5FE08DD2225AD1EE003B5414 /* View */,
+				5F4B42EB225CF0D8000552E0 /* ProfileDetail */,
+				5FE08DD2225AD1EE003B5414 /* Profile */,
+				5FE08D9722590506003B5414 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -635,14 +675,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		5FE08DD2225AD1EE003B5414 /* View */ = {
+		5FE08DD2225AD1EE003B5414 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5FE08DCF225AC74D003B5414 /* ViewModel */,
 				5FE08DD3225AD1F5003B5414 /* Cells */,
 				5FE08D89225903A6003B5414 /* ProfileViewController.swift */,
-				5FE08D9722590506003B5414 /* Profile.storyboard */,
 			);
-			path = View;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		5FE08DD3225AD1F5003B5414 /* Cells */ = {
@@ -674,6 +714,7 @@
 			isa = PBXGroup;
 			children = (
 				5FE994E9225C5B6A004726B0 /* ProfileItem.swift */,
+				5F4B42F3225CF54A000552E0 /* ProfileDetailItem.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -969,6 +1010,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F4B42D0225C976B000552E0 /* PasswordViewModel.swift in Sources */,
+				5F4B42F4225CF54A000552E0 /* ProfileDetailItem.swift in Sources */,
 				5FE08D85225902A3003B5414 /* SignUpViewController.swift in Sources */,
 				5FE08D832259027E003B5414 /* BaseViewController.swift in Sources */,
 				5F4B42D4225C97B0000552E0 /* ValidationViewModel.swift in Sources */,
@@ -981,10 +1023,12 @@
 				5F4B42B9225BAAA5000552E0 /* PaymentViewController.swift in Sources */,
 				5FE08DAC22590B6C003B5414 /* RootRouter.swift in Sources */,
 				5F4B42E8225CDD05000552E0 /* String+Extension.swift in Sources */,
+				5F4B42ED225CF0F4000552E0 /* ProfileDetailViewController.swift in Sources */,
 				5F4B42B4225B9F6F000552E0 /* MaskViewOverlay.swift in Sources */,
 				5F4B42D7225C9AB1000552E0 /* DataBinding.swift in Sources */,
 				5FE08DA7225908D2003B5414 /* AppConstants.swift in Sources */,
 				5FE08DC0225A3C51003B5414 /* CustomInputTextView.swift in Sources */,
+				5F4B42F2225CF47C000552E0 /* ProfileDetailTableViewCell.swift in Sources */,
 				5F4B42C4225C46ED000552E0 /* CoreParameter.swift in Sources */,
 				5F4B42C3225C46ED000552E0 /* EmptyResponse.swift in Sources */,
 				5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */,
