@@ -193,6 +193,13 @@
                                                         <constraint firstItem="hz1-wm-YsI" firstAttribute="leading" secondItem="5A7-Uz-7Gu" secondAttribute="trailing" constant="8" id="zKv-AC-tuR"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="labelPrice" destination="Dox-Qk-rZ3" id="8sx-5b-jnS"/>
+                                                    <outlet property="labelProductName" destination="0lT-Bs-I7B" id="Nx6-tS-Lsm"/>
+                                                    <outlet property="labelTransactionContent" destination="hz1-wm-YsI" id="52n-RY-SM0"/>
+                                                    <outlet property="storeImage" destination="5A7-Uz-7Gu" id="D0L-Cg-zeY"/>
+                                                    <outlet property="transactionNote" destination="prq-GL-Gcn" id="eMQ-Bi-let"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>

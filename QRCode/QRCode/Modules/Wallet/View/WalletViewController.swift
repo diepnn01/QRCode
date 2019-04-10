@@ -13,10 +13,15 @@ final class WalletViewController: BaseViewController {
     //MARK:- Outlets
     @IBOutlet private weak var viewTransactionHistory: UIView!
     @IBOutlet private weak var tableView: UITableView!
+
+    //MARK:- Private properties
+    private let viewModel = WalletViewModel()
     
+    //MARK:- Public
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        viewModel.getTransactionHistory()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -26,20 +31,26 @@ final class WalletViewController: BaseViewController {
     
     //MARK:- Private method
     private func setupView() {
-        
         tableView.disableStickyHeader()
+        
+        viewModel.getTransactionCompleted?.subcribe(hdl: { [weak self](isCompleted: Bool) in
+            guard isCompleted else {
+                return
+            }
+            self?.tableView.reloadData()
+        })
     }
 }
 
 extension WalletViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return viewModel.numberOfSection()
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.numberOfRow(at: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,6 +58,7 @@ extension WalletViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.transaction = viewModel.item(at: indexPath)
         return cell
     }
 }
@@ -66,7 +78,7 @@ extension WalletViewController: UITableViewDelegate {
         
         let titleLabel = UILabel(frame: headerView.frame)
         titleLabel.textAlignment = .center
-        titleLabel.text = "04.19.2019"
+        titleLabel.text = viewModel.sectionTitle(at: section)
         titleLabel.textColor = UIColor.colorFromHex("797879")
         titleLabel.font = UIFont.systemFont(ofSize: 13)
         

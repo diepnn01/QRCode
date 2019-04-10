@@ -68,8 +68,7 @@ final class ProfileDetailViewModel {
         guard let user = editUser else {
             return
         }
-        
-        
+
         Spinner.shared.show()
         service.updateProfile(params: user).cloudResponse { [weak self](response) in
             SessionManager.shared.user?.value = self?.editUser

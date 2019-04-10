@@ -17,7 +17,6 @@ final class AppConstant {
     
     static let kumulosAPIKey = "cdda3e9f-3f20-40b3-b256-7edd153e985e"
     static let kumulosSecretKey = "ZmXFSLsRfaRjb0EG7yjLVfbndd6giAtM3wYG"
-    
 }
 
 

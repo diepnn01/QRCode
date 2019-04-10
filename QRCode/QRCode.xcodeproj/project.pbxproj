@@ -45,6 +45,10 @@
 		5F4B42FB225D6A21000552E0 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42FA225D6A21000552E0 /* ImageService.swift */; };
 		5F4B42FD225D7337000552E0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */; };
 		5F4B4302225DC7FA000552E0 /* UserCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B4301225DC7FA000552E0 /* UserCollection.swift */; };
+		5F4B4305225DE796000552E0 /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B4304225DE796000552E0 /* WalletService.swift */; };
+		5F4B4308225DEDE5000552E0 /* TransactionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B4307225DEDE5000552E0 /* TransactionCollection.swift */; };
+		5F4B430A225DEE42000552E0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B4309225DEE42000552E0 /* Transaction.swift */; };
+		5F4B430C225E41AC000552E0 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B430B225E41AC000552E0 /* Date+Extension.swift */; };
 		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
@@ -151,6 +155,10 @@
 		5F4B42FA225D6A21000552E0 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5F4B4301225DC7FA000552E0 /* UserCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollection.swift; sourceTree = "<group>"; };
+		5F4B4304225DE796000552E0 /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
+		5F4B4307225DEDE5000552E0 /* TransactionCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCollection.swift; sourceTree = "<group>"; };
+		5F4B4309225DEE42000552E0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		5F4B430B225E41AC000552E0 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -357,6 +365,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5F4B4306225DEDD1000552E0 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B4307225DEDE5000552E0 /* TransactionCollection.swift */,
+				5F4B4309225DEE42000552E0 /* Transaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
 		5FB143E32256186100218AAE = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +467,7 @@
 		5FE08D7222590049003B5414 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B4306225DEDD1000552E0 /* Transaction */,
 				5FE994E8225C5B47004726B0 /* Profile */,
 				5F4B42C9225C4846000552E0 /* User */,
 				5F4B42BE225C46ED000552E0 /* Common */,
@@ -587,6 +605,7 @@
 		5FE08DA02259066A003B5414 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B4304225DE796000552E0 /* WalletService.swift */,
 				5F4B42C7225C4722000552E0 /* UserService.swift */,
 				5F4B42FA225D6A21000552E0 /* ImageService.swift */,
 			);
@@ -603,6 +622,7 @@
 				5FE08DB322590ED8003B5414 /* NSObject.swift */,
 				5F4B42E7225CDD05000552E0 /* String+Extension.swift */,
 				5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */,
+				5F4B430B225E41AC000552E0 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1043,6 +1063,7 @@
 				5FE08D882259038B003B5414 /* TabbarViewController.swift in Sources */,
 				5F4B42F6225CFA7A000552E0 /* ProfileDetailViewModel.swift in Sources */,
 				5FE08DB422590ED8003B5414 /* NSObject.swift in Sources */,
+				5F4B4308225DEDE5000552E0 /* TransactionCollection.swift in Sources */,
 				5FE994EA225C5B6A004726B0 /* ProfileItem.swift in Sources */,
 				5FE08DC8225A5733003B5414 /* WalletViewModel.swift in Sources */,
 				5FE08DAE22590BC1003B5414 /* DeepLinkHandler.swift in Sources */,
@@ -1059,6 +1080,7 @@
 				5F4B42C4225C46ED000552E0 /* CoreParameter.swift in Sources */,
 				5F4B42C3225C46ED000552E0 /* EmptyResponse.swift in Sources */,
 				5FE08DD1225AC784003B5414 /* ProfileViewModel.swift in Sources */,
+				5F4B430A225DEE42000552E0 /* Transaction.swift in Sources */,
 				5F4B42DE225CAD09000552E0 /* Spinner.swift in Sources */,
 				5FE08D802259026B003B5414 /* LoginViewController.swift in Sources */,
 				5FE08DA922590917003B5414 /* UIColor+Extension.swift in Sources */,
@@ -1074,6 +1096,8 @@
 				5FE08DBA225A3583003B5414 /* BaseCustomView.swift in Sources */,
 				5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */,
 				5FE08D8A225903A6003B5414 /* ProfileViewController.swift in Sources */,
+				5F4B4305225DE796000552E0 /* WalletService.swift in Sources */,
+				5F4B430C225E41AC000552E0 /* Date+Extension.swift in Sources */,
 				5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */,
 				5FE08DCE225A665D003B5414 /* UITableView+Extension.swift in Sources */,
 				5FB143F02256186100218AAE /* AppDelegate.swift in Sources */,
