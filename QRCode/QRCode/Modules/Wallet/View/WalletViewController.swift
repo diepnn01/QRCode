@@ -21,7 +21,9 @@ final class WalletViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        viewModel.getTransactionHistory()
+        getTransactionHistory()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.getTransactionHistory), name: .addTransactionSuccess, object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -30,6 +32,10 @@ final class WalletViewController: BaseViewController {
     }
     
     //MARK:- Private method
+    @objc private func getTransactionHistory() {
+        viewModel.getTransactionHistory()
+    }
+    
     private func setupView() {
         tableView.disableStickyHeader()
         
@@ -64,10 +70,6 @@ extension WalletViewController: UITableViewDataSource {
 }
 
 extension WalletViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO
-    }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

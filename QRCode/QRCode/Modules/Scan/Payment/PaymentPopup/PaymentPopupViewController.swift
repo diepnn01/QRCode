@@ -23,6 +23,12 @@ final class PaymentPopupViewController: UIViewController {
     }
     
     @IBAction private func actionOK(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: false) {
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            
+            appDelegate.router.rootViewController?.popViewController(animated: true)
+        }
     }
 }

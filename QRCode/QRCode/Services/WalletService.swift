@@ -33,10 +33,10 @@ final class WalletSevice {
     /*
      * When user implement any transaction, we will call api to store it into server
      */
-    func addNewTransaction(transaction: Transaction) -> ServiceRequest<TransactionCollection> {
-        let request = ServiceRequest<TransactionCollection>()
+    func addNewTransaction(transaction: Product) -> ServiceRequest<EmptyResponse> {
+        let request = ServiceRequest<EmptyResponse>()
         Kumulos.call(MethodName.addTransaction, parameters: transaction.toDictionary()).success { (response, _) in
-            request.handleResponseJSONArray(response: response)
+            request.handleEmptyResponse(response: response)
             }.failure { (error, _) in
                 request.handleError(error: error)
         }

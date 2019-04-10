@@ -16,6 +16,7 @@ final class ScanViewController: BaseViewController {
     
     //MARK:- Private properties
     private var scanner: QRCodeScanner?
+    private let viewModel = ScanViewModel()
     
     //MARK:- Public methods
     override func viewDidLoad() {
@@ -49,6 +50,7 @@ final class ScanViewController: BaseViewController {
             return
         }
         
+        destinationVC.product = viewModel.fakeData.randomElement()
         appDelegate.router.rootViewController?.pushViewController(destinationVC, animated: true)
     }
 }

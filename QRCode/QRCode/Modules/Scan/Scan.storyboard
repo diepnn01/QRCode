@@ -223,8 +223,8 @@
                                                                 <color key="textColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 100.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-FP-2Pn">
-                                                                <rect key="frame" x="325.5" y="34.5" width="78.5" height="24.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 10000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-FP-2Pn">
+                                                                <rect key="frame" x="301" y="34.5" width="103" height="24.5"/>
                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="20"/>
                                                                 <color key="textColor" red="0.23921568630000001" green="0.28627450980000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -268,7 +268,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="1he-T9-ioF" kind="presentation" animates="NO" modalPresentationStyle="overCurrentContext" id="QPV-T3-eyK"/>
+                                                            <action selector="actionPay:" destination="Rit-sq-oV7" eventType="touchUpInside" id="Z5u-Do-PBu"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -343,7 +343,13 @@
                         <viewLayoutGuide key="safeArea" id="pc3-Ip-dOK"/>
                     </view>
                     <connections>
+                        <outlet property="buttonPay" destination="Viq-xh-2Tg" id="VTE-p3-X7t"/>
+                        <outlet property="labelProductName" destination="XXx-pY-oPZ" id="Jc1-WI-i4T"/>
+                        <outlet property="labelStore" destination="JRO-7h-W1k" id="dyh-WY-0KL"/>
+                        <outlet property="labelSubTotal" destination="gAk-nl-bRe" id="8I5-NL-NiS"/>
+                        <outlet property="labelTotalAmount" destination="shA-n2-s3C" id="t93-eE-u1Q"/>
                         <outlet property="viewContainer" destination="WwI-ll-9hI" id="VkH-HT-n7W"/>
+                        <segue destination="1he-T9-ioF" kind="presentation" identifier="show popup confirm" animates="NO" modalPresentationStyle="overCurrentContext" id="tFS-Rc-Y1f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzJ-0A-1lR" userLabel="First Responder" sceneMemberID="firstResponder"/>

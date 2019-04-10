@@ -27,6 +27,9 @@ final class WalletViewModel {
         guard let userID = SessionManager.shared.userID else {
             return
         }
+        transactions.removeAll()
+        sections.removeAll()
+        
         Spinner.shared.show()
         service.getTransactionHistory(userID: userID).cloudResponse { [weak self](collection: TransactionCollection) in
             self?.classifyData(objects: collection.objectList)
