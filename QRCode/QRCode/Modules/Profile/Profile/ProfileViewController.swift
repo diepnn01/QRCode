@@ -68,7 +68,12 @@ final class ProfileViewController: BaseViewController {
         
         appDelegate.router.rootViewController?.pushViewController(destinationVC, animated: true)
     }
-} 
+    
+    //MARK:- Actions
+    @IBAction private func actionShowProfile(_ sender: UIButton) {
+        showProfileDetail()
+    }
+}
 
 //MARK:- UITableViewDataSource
 extension ProfileViewController: UITableViewDataSource {

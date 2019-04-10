@@ -66,6 +66,12 @@
                                             <constraint firstAttribute="height" constant="54" id="oEG-VC-Egp"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GN-Cb-brp">
+                                        <rect key="frame" x="13" y="10" width="88" height="88"/>
+                                        <connections>
+                                            <action selector="actionShowProfile:" destination="jqj-1e-RvW" eventType="touchUpInside" id="mDS-b0-uwT"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="YEJ-bQ-v6N" firstAttribute="top" secondItem="jD6-5Z-Tgz" secondAttribute="top" id="6uF-Nd-MMG"/>
@@ -73,8 +79,12 @@
                                     <constraint firstAttribute="height" constant="108" id="DOy-fx-S5F"/>
                                     <constraint firstAttribute="trailing" secondItem="KnQ-vI-a0u" secondAttribute="trailing" id="Ekq-ei-tpZ"/>
                                     <constraint firstAttribute="width" constant="114" id="FYW-il-7f3"/>
+                                    <constraint firstItem="8GN-Cb-brp" firstAttribute="trailing" secondItem="jMf-IN-Q2S" secondAttribute="trailing" id="GHi-4R-NYu"/>
+                                    <constraint firstItem="8GN-Cb-brp" firstAttribute="bottom" secondItem="jMf-IN-Q2S" secondAttribute="bottom" id="QKQ-F7-9G7"/>
+                                    <constraint firstItem="8GN-Cb-brp" firstAttribute="leading" secondItem="jMf-IN-Q2S" secondAttribute="leading" id="TEx-0f-QwP"/>
                                     <constraint firstItem="jMf-IN-Q2S" firstAttribute="centerX" secondItem="jD6-5Z-Tgz" secondAttribute="centerX" id="ZBN-8z-ccu"/>
                                     <constraint firstItem="YEJ-bQ-v6N" firstAttribute="leading" secondItem="jD6-5Z-Tgz" secondAttribute="leading" id="ZWw-T9-XNW"/>
+                                    <constraint firstItem="8GN-Cb-brp" firstAttribute="top" secondItem="jMf-IN-Q2S" secondAttribute="top" id="dTP-XS-kDn"/>
                                     <constraint firstAttribute="bottom" secondItem="KnQ-vI-a0u" secondAttribute="bottom" id="oEz-Xn-Cml"/>
                                 </constraints>
                             </view>
@@ -207,7 +217,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="65.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nh-cS-aiE">
-                                        <rect key="frame" x="171" y="18" width="72" height="30"/>
+                                        <rect key="frame" x="172.5" y="17.5" width="69.5" height="31"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="25.440000534057617"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -236,7 +246,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-Z9-Nwa">
                                 <rect key="frame" x="150" y="134.5" width="114" height="108"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="KfU-9B-fT4">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user" translatesAutoresizingMaskIntoConstraints="NO" id="KfU-9B-fT4">
                                         <rect key="frame" x="13" y="10" width="88" height="88"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -381,7 +391,6 @@
     </scenes>
     <resources>
         <image name="default_user" width="512" height="512"/>
-        <image name="dummy_avatar" width="98" height="97"/>
         <image name="icon-logo" width="244" height="36"/>
         <image name="icon_arrow_right" width="7" height="12"/>
         <image name="icon_back" width="14" height="22"/>
