@@ -13,7 +13,8 @@ final class WalletViewController: BaseViewController {
     //MARK:- Outlets
     @IBOutlet private weak var viewTransactionHistory: UIView!
     @IBOutlet private weak var tableView: UITableView!
-
+    @IBOutlet private weak var labelEmptyData: UILabel!
+    
     //MARK:- Private properties
     private let viewModel = WalletViewModel()
     
@@ -43,6 +44,7 @@ final class WalletViewController: BaseViewController {
             guard isCompleted else {
                 return
             }
+            self?.labelEmptyData.isHidden = !(self?.viewModel.numberOfSection() == 0)
             self?.tableView.reloadData()
         })
     }

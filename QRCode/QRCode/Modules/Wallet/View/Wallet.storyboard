@@ -207,11 +207,19 @@
                                             <outlet property="delegate" destination="dZO-UT-GrE" id="3E1-sy-pZp"/>
                                         </connections>
                                     </tableView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't any transaction yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I02-Is-CFs">
+                                        <rect key="frame" x="95" y="251" width="224" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="16"/>
+                                        <color key="textColor" red="0.23921568630000001" green="0.28627450980000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="aRO-OG-yjd" firstAttribute="top" secondItem="nLa-lo-cen" secondAttribute="top" id="5xO-3t-USI"/>
                                     <constraint firstAttribute="bottom" secondItem="aRO-OG-yjd" secondAttribute="bottom" id="Ihi-W3-zL2"/>
+                                    <constraint firstItem="I02-Is-CFs" firstAttribute="centerX" secondItem="nLa-lo-cen" secondAttribute="centerX" id="N9w-Yo-Hkf"/>
+                                    <constraint firstItem="I02-Is-CFs" firstAttribute="centerY" secondItem="nLa-lo-cen" secondAttribute="centerY" id="T4P-G1-5vc"/>
                                     <constraint firstAttribute="trailing" secondItem="aRO-OG-yjd" secondAttribute="trailing" id="aRH-G3-adh"/>
                                     <constraint firstItem="aRO-OG-yjd" firstAttribute="leading" secondItem="nLa-lo-cen" secondAttribute="leading" id="kMf-n1-urQ"/>
                                 </constraints>
@@ -236,6 +244,7 @@
                         <viewLayoutGuide key="safeArea" id="bTJ-BZ-9kU"/>
                     </view>
                     <connections>
+                        <outlet property="labelEmptyData" destination="I02-Is-CFs" id="75T-wV-QWV"/>
                         <outlet property="tableView" destination="aRO-OG-yjd" id="rbm-9p-aEI"/>
                         <outlet property="viewTransactionHistory" destination="nLa-lo-cen" id="PzH-dh-SPh"/>
                     </connections>
