@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 import IQKeyboardManagerSwift
 import KumulosSDK
-import netfox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,8 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Kumulos
         let builder = KSConfigBuilder(apiKey: AppConstant.kumulosAPIKey, secretKey: AppConstant.kumulosSecretKey)
         Kumulos.initialize(config: builder.build())
-        
-        NFX.sharedInstance().start()
         
         return true
     }

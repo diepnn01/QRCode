@@ -39,12 +39,9 @@ final class SessionManager {
         }
     }
     
-    var user: DataBinding<User>? {
-        didSet {
-            guard let newUserID = user?.value?.userID else {
-                return
-            }
-            userID = "\(newUserID)"
-        }
+    var user: DataBinding<User>?
+    
+    func resetAll() {
+        keychain.delete(Keywords.userID)
     }
 }

@@ -8,7 +8,6 @@ target 'QRCode' do
   pod 'IQKeyboardManagerSwift'
   pod 'KumulosSdkSwift', '~> 4.0'
   pod 'KeychainSwift', '~> 14.0'
-  pod 'netfox'
   
   target 'QRCodeTests' do
     inherit! :search_paths
