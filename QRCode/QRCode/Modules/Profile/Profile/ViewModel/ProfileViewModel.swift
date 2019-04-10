@@ -11,6 +11,10 @@ import Foundation
 final class ProfileViewModel {
  
     private var listItems = [ProfileItem]()
+    private let service = UserService()
+    
+    //MARK:- Public properties
+    var errorMessage: DataBinding<String> = DataBinding(value: "")
     
     //MARK:- Public methods
     init() {
@@ -26,6 +30,20 @@ final class ProfileViewModel {
             return nil
         }
         return listItems[row]
+    }
+    
+    func getProfileDetail() {
+        guard let userID = SessionManager.shared.userID else {
+            return
+        }
+        Spinner.shared.show()
+        service.getProfileDetail(userID: userID).cloudResponse { (user: User) in
+            SessionManager.shared.user?.value = user
+            }.cloudError { [weak self](errorMsg: String, _: Int?) in
+                self?.errorMessage.value = errorMsg
+            }.finally {
+                Spinner.shared.dismiss()
+        }
     }
     
     //MARK:- Private methods

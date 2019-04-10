@@ -10,7 +10,9 @@ import UIKit
 
 final class ProfileDetailViewModel {
 
+    //MARK:- Private properties
     private var listItems = [ProfileDetailItem]()
+    private let service = UserService()
     
     //MARK:- Public methods
     init() {
@@ -30,7 +32,7 @@ final class ProfileDetailViewModel {
     
     //MARK:- Private methods
     private func prepareData() {
-        guard let user = SessionManager.shared.user else {
+        guard let user = SessionManager.shared.user?.value else {
             return
         }
         

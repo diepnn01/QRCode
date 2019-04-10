@@ -49,7 +49,7 @@ final class LoginViewModel {
         Spinner.shared.show()
         let params = LoginParams(email: email!, password: password!)
         service.login(params: params).cloudResponse { [weak self](user: User) in
-            SessionManager.shared.user = user
+            SessionManager.shared.user?.value = user
             self?.loginCompleted.value = true
             }.cloudError { [weak self](msgErr: String, _: Int?) in
                 self?.errorMessage.value = msgErr

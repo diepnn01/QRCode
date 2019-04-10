@@ -9,7 +9,11 @@ import KeychainSwift
 
 final class SessionManager {
     
-    static let shared = SessionManager()
+    static let shared: SessionManager = {
+        let instance = SessionManager()
+        instance.user = DataBinding()
+        return instance
+    }()
     
     fileprivate class Keywords {
         static let userID = "userID"
@@ -35,9 +39,9 @@ final class SessionManager {
         }
     }
     
-    var user: User? {
+    var user: DataBinding<User>? {
         didSet {
-            guard let newUserID = user?.userID else {
+            guard let newUserID = user?.value?.userID else {
                 return
             }
             userID = "\(newUserID)"

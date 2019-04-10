@@ -15,6 +15,7 @@ final class UserService {
         static let signUp = "signUp"
         static let login = "login"
         static let updateProfile = "updateProfile"
+        static let profileDetail = "getProfileDetail"
     }
     
     /* Input: Signup parameters email and password
@@ -51,6 +52,17 @@ final class UserService {
         Kumulos.call(MethodName.updateProfile, parameters: params.toDictionary()).success { (response, _) in
             request.handleResponseJSONArray(response: response)
             }.failure { (error: Error?, _) in
+                request.handleError(error: error)
+        }
+        return request
+    }
+    
+    func getProfileDetail(userID: String) -> ServiceRequest<User> {
+        let request = ServiceRequest<User>()
+        let params = ["userID": userID]
+        Kumulos.call(MethodName.profileDetail, parameters: params as Dictionary<String, AnyObject>).success { (response, _) in
+            request.handleResponseJSONArray(response: response)
+            }.failure { (error, _) in
                 request.handleError(error: error)
         }
         return request

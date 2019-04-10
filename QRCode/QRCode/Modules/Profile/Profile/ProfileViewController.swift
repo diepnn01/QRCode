@@ -11,11 +11,11 @@ import UIKit
 final class ProfileViewController: BaseViewController {
 
     //MARK:- Outlets
-    @IBOutlet weak var imageViewAvatar: UIImageView!
-    @IBOutlet weak var labelFullName: UILabel!
-    @IBOutlet weak var labelPhone: UILabel!
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet private weak var imageViewAvatar: UIImageView!
+    @IBOutlet private weak var labelFullName: UILabel!
+    @IBOutlet private weak var labelPhone: UILabel!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var containerView: UIView!
     
     //MARK:- Private properties
     private let viewModel = ProfileViewModel()
@@ -23,11 +23,37 @@ final class ProfileViewController: BaseViewController {
     //MARK:- Public methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSubcribes()
+        viewModel.getProfileDetail()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         containerView.roundCorners(corners: [.topRight, .topLeft], radius: 20)
+    }
+    
+    private func setupSubcribes() {
+        SessionManager.shared.user?.subcribe(hdl: { [weak self](user: User) in
+            guard let userID = user.userID else {
+                return
+            }
+            
+            if let image = ImageService.getSavedImage(named: "\(userID)") {
+                self?.imageViewAvatar.image = image
+            } else {
+                self?.imageViewAvatar.image = UIImage(named: "default_user")
+            }
+            
+            self?.labelPhone.text = user.phoneNumber
+            self?.labelFullName.text = "\(user.firstName ?? "") \(user.lastName ?? "")"
+        })
+        
+        viewModel.errorMessage.subcribe { [weak self](errMsg: String) in
+            guard !errMsg.isEmpty else {
+                return
+            }
+            self?.showMessage(title: "common.error".localize(), content: errMsg)
+        }
     }
     
     //MARK:- Private methods
