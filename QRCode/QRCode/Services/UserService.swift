@@ -21,8 +21,8 @@ final class UserService {
     /* Input: Signup parameters email and password
      * Response: User object
      */
-    func signUp(params: SignUpParams) -> ServiceRequest<User> {
-        let request = ServiceRequest<User>()
+    func signUp(params: SignUpParams) -> ServiceRequest<UserCollection> {
+        let request = ServiceRequest<UserCollection>()
         Kumulos.call(MethodName.signUp, parameters: params.toDictionary()).success { (response, _) in
             request.handleResponseJSONArray(response: response)
             }.failure { (error: Error?, _) in
@@ -34,8 +34,8 @@ final class UserService {
     /* Input: Login parameters email & password & firstName & lastName
      * Response: User object
      */
-    func login(params: LoginParams) -> ServiceRequest<User> {
-        let request = ServiceRequest<User>()
+    func login(params: LoginParams) -> ServiceRequest<UserCollection> {
+        let request = ServiceRequest<UserCollection>()
         Kumulos.call(MethodName.login, parameters: params.toDictionary()).success { (response, _) in
             request.handleResponseJSONArray(response: response)
             }.failure { (err, _) in
@@ -47,18 +47,18 @@ final class UserService {
     /* Input: User Information
      * Response: User object
      */
-    func updateProfile(params: User) -> ServiceRequest<User> {
-        let request = ServiceRequest<User>()
+    func updateProfile(params: User) -> ServiceRequest<EmptyResponse> {
+        let request = ServiceRequest<EmptyResponse>()
         Kumulos.call(MethodName.updateProfile, parameters: params.toDictionary()).success { (response, _) in
-            request.handleResponseJSONArray(response: response)
+            request.handleResponseJSON(response: response)
             }.failure { (error: Error?, _) in
                 request.handleError(error: error)
         }
         return request
     }
     
-    func getProfileDetail(userID: String) -> ServiceRequest<User> {
-        let request = ServiceRequest<User>()
+    func getProfileDetail(userID: String) -> ServiceRequest<UserCollection> {
+        let request = ServiceRequest<UserCollection>()
         let params = ["userID": userID]
         Kumulos.call(MethodName.profileDetail, parameters: params as Dictionary<String, AnyObject>).success { (response, _) in
             request.handleResponseJSONArray(response: response)

@@ -44,6 +44,7 @@
 		5F4B42F9225D069C000552E0 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F8225D069C000552E0 /* ImageUtils.swift */; };
 		5F4B42FB225D6A21000552E0 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42FA225D6A21000552E0 /* ImageService.swift */; };
 		5F4B42FD225D7337000552E0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */; };
+		5F4B4302225DC7FA000552E0 /* UserCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B4301225DC7FA000552E0 /* UserCollection.swift */; };
 		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
@@ -149,6 +150,7 @@
 		5F4B42F8225D069C000552E0 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		5F4B42FA225D6A21000552E0 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		5F4B4301225DC7FA000552E0 /* UserCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollection.swift; sourceTree = "<group>"; };
 		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				5F4B42CA225C51F2000552E0 /* LoginParams.swift */,
 				5F4B42CC225C5392000552E0 /* User.swift */,
 				5FE994E6225C5952004726B0 /* SignUpParams.swift */,
+				5F4B4301225DC7FA000552E0 /* UserCollection.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -1059,6 +1062,7 @@
 				5F4B42DE225CAD09000552E0 /* Spinner.swift in Sources */,
 				5FE08D802259026B003B5414 /* LoginViewController.swift in Sources */,
 				5FE08DA922590917003B5414 /* UIColor+Extension.swift in Sources */,
+				5F4B4302225DC7FA000552E0 /* UserCollection.swift in Sources */,
 				5F4B42C5225C46ED000552E0 /* ServiceRequest.swift in Sources */,
 				5F4B42CD225C5392000552E0 /* User.swift in Sources */,
 				5FE08DB222590E13003B5414 /* UIStoryboard+Extension.swift in Sources */,

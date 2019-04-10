@@ -11,18 +11,32 @@ import UIKit
 final class ProfileDetailTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var labelTitle: UILabel!
-    @IBOutlet private weak var labelContent: UILabel!
+    @IBOutlet private weak var textFieldContent: UITextField!
     
     static let identitfier = "profile detail cell"
     
-    var item: ProfileDetailItem? {
-        didSet {
-            guard let model = item else {
-                return
-            }
-            
-            labelTitle.text = "\(model.title):"
-            labelContent.text = model.content
+    var onValueChanged: ((_ content: String?) -> Void)?
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        textFieldContent.delegate = self
+    }
+    
+    func fillData(model: ProfileDetailItem?, enableEdit: Bool = true) {
+        guard let model = model else {
+            return
         }
+        
+        labelTitle.text = "\(model.title):"
+        textFieldContent.text = model.content
+        textFieldContent.placeholder = model.placeHolder
+        textFieldContent.isEnabled = enableEdit
+    }
+}
+
+extension ProfileDetailTableViewCell: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        onValueChanged?(textField.text)
     }
 }

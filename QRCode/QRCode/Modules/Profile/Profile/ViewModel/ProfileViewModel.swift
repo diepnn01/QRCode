@@ -37,8 +37,8 @@ final class ProfileViewModel {
             return
         }
         Spinner.shared.show()
-        service.getProfileDetail(userID: userID).cloudResponse { (user: User) in
-            SessionManager.shared.user?.value = user
+        service.getProfileDetail(userID: userID).cloudResponse { (collection: UserCollection) in
+            SessionManager.shared.user?.value = collection.objectList.first
             }.cloudError { [weak self](errorMsg: String, _: Int?) in
                 self?.errorMessage.value = errorMsg
             }.finally {

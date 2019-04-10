@@ -51,8 +51,8 @@ final class SignUpViewModel {
     
     func signUp() {
         Spinner.shared.show()
-        service.signUp(params: signUpParams).cloudResponse { [weak self](user: User) in
-            SessionManager.shared.user?.value = user
+        service.signUp(params: signUpParams).cloudResponse { [weak self](collection: UserCollection) in
+            SessionManager.shared.user?.value = collection.objectList.first
             self?.signupCompleted.value = true
             }.cloudError { [weak self](errorMsg: String, _: Int?) in
                 self?.errorMessage.value = errorMsg

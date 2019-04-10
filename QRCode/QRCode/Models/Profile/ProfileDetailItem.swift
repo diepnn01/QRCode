@@ -11,10 +11,12 @@ import UIKit
 struct ProfileDetailItem {
 
     var title: String
-    var content: String
+    var content: String?
+    var placeHolder: String?
     
-    init(title: String, content: String) {
+    init(title: String, content: String?, placeHolder: String) {
         self.title = title
         self.content = content
+        self.placeHolder = placeHolder
     }
 }

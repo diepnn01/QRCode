@@ -10,6 +10,9 @@
 "common.ok" = "OK";
 "common.error" = "Error";
 "common.Cancel" = "CANCEL";
+"common.warning" = "Warning!";
+"common.no" = "NO";
+
 //Login
 "message.invalid.password" = "Please enter a valid password";
 "message.invalid.email" = "Please enter a valid email id";
@@ -23,6 +26,19 @@
 "profile.security.settings" = "Security Settings";
 "profile.help.support" = "Help & Support";
 "profile.team.of.use" = "Term of Use";
+"profile.message.warning.lost.data" = "Your changes has not been saved yet. Do you want to save it before leave here?";
+
+"profile.item.firstname" = "First Name";
+"profile.item.lastname" = "Last Name";
+"profile.item.email" = "Email";
+"profile.item.mobile" = "Mobile";
+
+"profile.placeholder.firstname" = "Input your first name";
+"profile.placeholder.lastname" = "Input Your last name";
+"profile.placeholder.email" = "Input your email";
+"profile.placeholder.mobile" = "Input your phone number";
+
+
 
 "profile.Gallery" = "Gallery";
 "profile.Camera" = "Camera";
