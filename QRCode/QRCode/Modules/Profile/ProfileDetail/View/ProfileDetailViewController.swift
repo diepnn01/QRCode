@@ -9,9 +9,10 @@
 import UIKit
 
 final class ProfileDetailViewController: BaseViewController {
-
+    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var viewContainer: UIView!
+    @IBOutlet private weak var imageViewAvatar: UIImageView!
     
     private let viewModel = ProfileDetailViewModel()
     
@@ -22,7 +23,7 @@ final class ProfileDetailViewController: BaseViewController {
         super.viewWillAppear(animated)
         viewContainer.roundCorners(corners: [.topLeft, .topRight], radius: 12)
     }
-
+    
     //MARK:- Actions
     @IBAction private func actionBack(_ sender: UIButton) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -31,8 +32,33 @@ final class ProfileDetailViewController: BaseViewController {
         appDelegate.router.rootViewController?.popViewController(animated: true)
     }
     
+    @IBAction private func actionChooseImage(_ sender: UIButton) {
+        showSheetGetImage()
+    }
 }
 
+//MARK:- UIImagePickerControllerDelegate
+extension ProfileDetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectedImage = info[.originalImage] as? UIImage else {
+            return
+        }
+        guard let userID = SessionManager.shared.userID else {
+            return
+        }
+        
+        if ImageService.saveImage(image: selectedImage, fileName: userID) {
+            imageViewAvatar.image = ImageService.getSavedImage(named: userID)
+        }
+        
+        self.dismiss(animated: true, completion: {
+            UIApplication.shared.statusBarStyle = .lightContent
+        })
+    }
+}
+
+//MARK:- UITableViewDataSource
 extension ProfileDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,6 +74,7 @@ extension ProfileDetailViewController: UITableViewDataSource {
     }
 }
 
+//MARK:- UITableViewDelegate
 extension ProfileDetailViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

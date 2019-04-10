@@ -260,13 +260,23 @@
                                             <constraint firstAttribute="width" constant="57" id="qOZ-gf-IXg"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHu-hj-of7">
+                                        <rect key="frame" x="13" y="10" width="88" height="88"/>
+                                        <connections>
+                                            <action selector="actionChooseImage:" destination="2XX-Ox-EFI" eventType="touchUpInside" id="7L3-ju-cO9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="lHu-hj-of7" firstAttribute="bottom" secondItem="KfU-9B-fT4" secondAttribute="bottom" id="1S2-NO-D92"/>
                                     <constraint firstItem="jFR-EZ-ZMK" firstAttribute="leading" secondItem="HY9-Z9-Nwa" secondAttribute="leading" id="AKA-Q2-8zF"/>
                                     <constraint firstAttribute="trailing" secondItem="bFD-Xj-6cI" secondAttribute="trailing" id="CF3-T4-YpR"/>
+                                    <constraint firstItem="lHu-hj-of7" firstAttribute="top" secondItem="KfU-9B-fT4" secondAttribute="top" id="D6L-Zn-Njo"/>
                                     <constraint firstAttribute="bottom" secondItem="bFD-Xj-6cI" secondAttribute="bottom" id="Jbd-Ig-fnA"/>
+                                    <constraint firstItem="lHu-hj-of7" firstAttribute="leading" secondItem="KfU-9B-fT4" secondAttribute="leading" id="QQX-yJ-tvI"/>
                                     <constraint firstAttribute="width" constant="114" id="S3l-Xd-Lft"/>
                                     <constraint firstAttribute="height" constant="108" id="ThH-qf-zLm"/>
+                                    <constraint firstItem="lHu-hj-of7" firstAttribute="trailing" secondItem="KfU-9B-fT4" secondAttribute="trailing" id="eMo-p1-pja"/>
                                     <constraint firstItem="KfU-9B-fT4" firstAttribute="centerY" secondItem="HY9-Z9-Nwa" secondAttribute="centerY" id="jgj-OQ-2Jc"/>
                                     <constraint firstItem="jFR-EZ-ZMK" firstAttribute="top" secondItem="HY9-Z9-Nwa" secondAttribute="top" id="liE-Yp-hJi"/>
                                     <constraint firstItem="KfU-9B-fT4" firstAttribute="centerX" secondItem="HY9-Z9-Nwa" secondAttribute="centerX" id="z8d-Sk-EgZ"/>
@@ -352,6 +362,7 @@
                         <viewLayoutGuide key="safeArea" id="srr-kG-EgA"/>
                     </view>
                     <connections>
+                        <outlet property="imageViewAvatar" destination="KfU-9B-fT4" id="kRa-pj-Tws"/>
                         <outlet property="tableView" destination="TQo-D9-buZ" id="7Aq-wv-biH"/>
                         <outlet property="viewContainer" destination="w6A-C9-JxW" id="kiL-5K-dAx"/>
                     </connections>

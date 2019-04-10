@@ -9,6 +9,7 @@
 //Common
 "common.ok" = "OK";
 "common.error" = "Error";
+"common.Cancel" = "CANCEL";
 //Login
 "message.invalid.password" = "Please enter a valid password";
 "message.invalid.email" = "Please enter a valid email id";
@@ -22,3 +23,9 @@
 "profile.security.settings" = "Security Settings";
 "profile.help.support" = "Help & Support";
 "profile.team.of.use" = "Term of Use";
+
+"profile.Gallery" = "Gallery";
+"profile.Camera" = "Camera";
+"Account.CameraDenied" = "Camera access is denied";
+"Account.LibraryDenied" = "Library access is denied";
+"Account.Settings" = "Settings"; // iphone setting

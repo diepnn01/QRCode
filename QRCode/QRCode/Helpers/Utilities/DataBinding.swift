@@ -1,9 +1,9 @@
 //
 //  DataBinding.swift
-//  MVVM-Training
+//  QRCode
 //
-//  Created by Diep Nguyen on 12/3/18.
-//  Copyright © 2018 Diep Nguyen. All rights reserved.
+//  Created by Diep Nguyen on 4/6/19.
+//  Copyright © 2019 Diep Nguyen. All rights reserved.
 //
 
 import UIKit

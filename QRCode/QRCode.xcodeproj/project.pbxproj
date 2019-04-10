@@ -41,6 +41,9 @@
 		5F4B42F2225CF47C000552E0 /* ProfileDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F1225CF47C000552E0 /* ProfileDetailTableViewCell.swift */; };
 		5F4B42F4225CF54A000552E0 /* ProfileDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F3225CF54A000552E0 /* ProfileDetailItem.swift */; };
 		5F4B42F6225CFA7A000552E0 /* ProfileDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F5225CFA7A000552E0 /* ProfileDetailViewModel.swift */; };
+		5F4B42F9225D069C000552E0 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42F8225D069C000552E0 /* ImageUtils.swift */; };
+		5F4B42FB225D6A21000552E0 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42FA225D6A21000552E0 /* ImageService.swift */; };
+		5F4B42FD225D7337000552E0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */; };
 		5F9AE446225B8BE200273C13 /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */; };
 		5FB143F02256186100218AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143EF2256186100218AAE /* AppDelegate.swift */; };
 		5FB143F82256186100218AAE /* QRCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB143F62256186100218AAE /* QRCode.xcdatamodeld */; };
@@ -143,6 +146,9 @@
 		5F4B42F1225CF47C000552E0 /* ProfileDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailTableViewCell.swift; sourceTree = "<group>"; };
 		5F4B42F3225CF54A000552E0 /* ProfileDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailItem.swift; sourceTree = "<group>"; };
 		5F4B42F5225CFA7A000552E0 /* ProfileDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewModel.swift; sourceTree = "<group>"; };
+		5F4B42F8225D069C000552E0 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		5F4B42FA225D6A21000552E0 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5F9AE445225B8BE200273C13 /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		5FB143EC2256186100218AAE /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB143EF2256186100218AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -579,6 +585,7 @@
 			isa = PBXGroup;
 			children = (
 				5F4B42C7225C4722000552E0 /* UserService.swift */,
+				5F4B42FA225D6A21000552E0 /* ImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -592,6 +599,7 @@
 				5FE08DB122590E13003B5414 /* UIStoryboard+Extension.swift */,
 				5FE08DB322590ED8003B5414 /* NSObject.swift */,
 				5F4B42E7225CDD05000552E0 /* String+Extension.swift */,
+				5F4B42FC225D7337000552E0 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -599,6 +607,7 @@
 		5FE08DA22259081C003B5414 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B42F8225D069C000552E0 /* ImageUtils.swift */,
 				5F4B42D6225C9AB1000552E0 /* DataBinding.swift */,
 				5FE08DAB22590B6C003B5414 /* RootRouter.swift */,
 				5FE08DAD22590BC1003B5414 /* DeepLinkHandler.swift */,
@@ -1022,6 +1031,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4B42FD225D7337000552E0 /* UIViewController+Extension.swift in Sources */,
 				5F4B42D0225C976B000552E0 /* PasswordViewModel.swift in Sources */,
 				5F4B42F4225CF54A000552E0 /* ProfileDetailItem.swift in Sources */,
 				5FE08D85225902A3003B5414 /* SignUpViewController.swift in Sources */,
@@ -1053,6 +1063,7 @@
 				5F4B42CD225C5392000552E0 /* User.swift in Sources */,
 				5FE08DB222590E13003B5414 /* UIStoryboard+Extension.swift in Sources */,
 				5FE08DA422590872003B5414 /* UIView+Extension.swift in Sources */,
+				5F4B42F9225D069C000552E0 /* ImageUtils.swift in Sources */,
 				5F4B42C8225C4722000552E0 /* UserService.swift in Sources */,
 				5F4B42BD225BBDFE000552E0 /* PaymentPopupViewController.swift in Sources */,
 				5F4B42CB225C51F2000552E0 /* LoginParams.swift in Sources */,
@@ -1072,6 +1083,7 @@
 				5FE08D8E225903C7003B5414 /* WalletViewController.swift in Sources */,
 				5FE08DCC225A64BE003B5414 /* TransactionHistoryCell.swift in Sources */,
 				5FE994E7225C5952004726B0 /* SignUpParams.swift in Sources */,
+				5F4B42FB225D6A21000552E0 /* ImageService.swift in Sources */,
 				5F4B42C6225C46ED000552E0 /* CoreReponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
